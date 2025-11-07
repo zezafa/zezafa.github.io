@@ -119,5 +119,183 @@
     ],
     "correctAnswer": "(∇×(u·∇)u = (ω·∇)u - (u·∇)ω)",
     "explanation": "Taking the curl of the momentum equation and using vector identities yields the convective‑stretching form of the vorticity equation."
+  },
+  {
+    "question": "What is the mathematical definition of vorticity in three dimensions?",
+    "options": ["ω = ∇ × u", "ω = ∇ · u", "ω = ∇²u", "ω = u × ∇p"],
+    "correctAnswer": "ω = ∇ × u",
+    "explanation": "Vorticity is defined as the curl of the velocity field, ω = ∇×u."
+  },
+  {
+    "question": "Which statement correctly describes a vortex line?",
+    "options": [
+      "It is always tangent to the local velocity vector.",
+      "It can exist in a stationary fluid.",
+      "It never intersects a wall or boundary.",
+      "Its direction is independent of vorticity."
+    ],
+    "correctAnswer": "It is always tangent to the local velocity vector.",
+    "explanation": "A vortex line is everywhere tangent to the vorticity vector, which aligns with the velocity for an ideal flow."
+  },
+  {
+    "question": "What theorem states that circulation around a material contour moving with an ideal fluid remains constant?",
+    "options": [
+      "Gauss’ divergence theorem",
+      "Kelvin’s circulation theorem",
+      "Stokes’ theorem",
+      "Helmholtz’s vortex theorems"
+    ],
+    "correctAnswer": "Kelvin’s circulation theorem",
+    "explanation": "Kelvin’s theorem guarantees conservation of circulation for a contour that moves with the flow in an inviscid, barotropic fluid."
+  },
+  {
+    "question": "According to Helmholtz’s first vortex theorem, vorticity is:",
+    "options": [
+      "Conserved along streamlines.",
+      "Divergence‑free; no sources or sinks.",
+      "Always zero in viscous flows.",
+      "Equal to the velocity gradient."
+    ],
+    "correctAnswer": "Divergence‑free; no sources or sinks.",
+    "explanation": "Helmholtz’s theorem states ∇·ω = 0, meaning vorticity has no divergence and cannot be created inside a fluid."
+  },
+  {
+    "question": "Which of the following is NOT an implication of Kelvin’s circulation theorem?",
+    "options": [
+      "Circulation can change only if viscosity or body forces are present.",
+      "Vortex stretching conserves circulation locally.",
+      "A vortex tube must have a closed loop.",
+      "The strength of a vortex remains constant for a material contour."
+    ],
+    "correctAnswer": "A vortex tube must have a closed loop.",
+    "explanation": "Kelvin’s theorem deals with conservation of circulation, not the topological requirement that vortex tubes be closed; Helmholtz’ second theorem addresses closure."
+  },
+  {
+    "question": "What is the physical meaning of the term (ω · ∇)u in the vorticity transport equation?",
+    "options": [
+      "Viscous diffusion of vorticity.",
+      "Convection of vorticity by the flow.",
+      "Vortex stretching/tilting.",
+      "Generation of vorticity by pressure gradients."
+    ],
+    "correctAnswer": "Vortex stretching/tilting.",
+    "explanation": "The term (ω · ∇)u represents how velocity gradients stretch or tilt vortex lines, changing their magnitude."
+  },
+  {
+    "question": "In a steady incompressible flow, what does the divergence of vorticity equal?",
+    "options": ["0", "∇²ω", "∇·u", "ν∇²ω"],
+    "correctAnswer": "0",
+    "explanation": "Taking the curl of continuity (∇·u = 0) yields ∇·ω = 0 for steady incompressible flow."
+  },
+  {
+    "question": "Which of these flows is irrotational?",
+    "options": ["Uniform shear flow", "Rotating rigid body flow", "Potential flow around a cylinder", "Stokes’ first problem"],
+    "correctAnswer": "Potential flow around a cylinder",
+    "explanation": "A potential flow has zero vorticity everywhere; the other listed flows have non‑zero vorticity."
+  },
+  {
+    "question": "The Biot–Savart law for a two‑dimensional point vortex gives an induced velocity that is:",
+    "options": ["Proportional to r", "Inverse of r", "Independent of r", "Directly proportional to circulation only"],
+    "correctAnswer": "Inverse of r",
+    "explanation": "In 2‑D the induced velocity magnitude scales as Γ/(2πr)."
+  },
+  {
+    "question": "Which statement about viscous diffusion of vorticity is correct?",
+    "options": [
+      "It generates new vorticity in the fluid.",
+      "It tends to concentrate vorticity into thin sheets.",
+      "It smooths out spatial variations in ω.",
+      "It has no effect on vortex stretching."
+    ],
+    "correctAnswer": "It smooths out spatial variations in ω.",
+    "explanation": "The term ν∇²ω acts like a diffusion operator, spreading vorticity and reducing gradients."
+  },
+  {
+    "question": "In the context of vortex dynamics, what is a vortex sheet?",
+    "options": [
+      "A thin layer where vorticity changes sign abruptly.",
+      "A region with uniform high pressure.",
+      "A closed loop of vortex lines.",
+      "An area devoid of vorticity."
+    ],
+    "correctAnswer": "A thin layer where vorticity changes sign abruptly.",
+    "explanation": "A vortex sheet is a surface across which the tangential velocity jumps, leading to concentrated vorticity."
+  },
+  {
+    "question": "Which of the following best describes the conservation property of a stream tube?",
+    "options": [
+      "Circulation is conserved.",
+      "Volume flux is conserved.",
+      "Vorticity magnitude is constant.",
+      "Pressure remains uniform along the tube."
+    ],
+    "correctAnswer": "Volume flux is conserved.",
+    "explanation": "Gauss’ theorem applied to a stream tube shows that ∫u·n dA = 0, implying constant volume flow rate."
+  },
+  {
+    "question": "What does the term 'vortex stretching' physically imply about the geometry of a vortex tube?",
+    "options": [
+      "The tube expands in length and widens cross‑sectionally.",
+      "The tube shortens and thins cross‑sectionally.",
+      "The tube remains unchanged in shape.",
+      "The tube twists without changing size."
+    ],
+    "correctAnswer": "The tube shortens and thins cross‑sectionally.",
+    "explanation": "Stretching reduces the cross‑sectional area while conserving circulation, increasing vorticity magnitude."
+  },
+  {
+    "question": "Which equation correctly represents the viscous force per unit volume in terms of vorticity?",
+    "options": [
+      "f_visc = μ∇²u",
+      "f_visc = ρ(u·∇)u",
+      "f_visc = (ω × ∇)u - ∇(μ/ρ)",
+      "f_visc = μ ω × ∇"
+    ],
+    "correctAnswer": "(ω × ∇)u - ∇(μ/ρ)",
+    "explanation": "The viscous term can be expressed as the curl of the vorticity field, leading to that form."
+  },
+  {
+    "question": "What is the primary difference between a vortex tube and a vortex sheet in terms of vorticity distribution?",
+    "options": [
+      "A tube has uniform vorticity; a sheet has none.",
+      "A tube concentrates vorticity along lines; a sheet spreads it over surfaces.",
+      "A tube is two‑dimensional; a sheet is three‑dimensional.",
+      "They are the same except for orientation."
+    ],
+    "correctAnswer": "A tube concentrates vorticity along lines; a sheet spreads it over surfaces.",
+    "explanation": "Vortex tubes carry vorticity along line structures, whereas sheets distribute it across a surface."
+  },
+  {
+    "question": "Which process is responsible for generating vorticity at a solid boundary in an inviscid flow?",
+    "options": [
+      "Viscous diffusion",
+      "Kelvin–Helmholtz instability",
+      "Boundary layer separation",
+      "No-slip condition in viscous flows"
+    ],
+    "correctAnswer": "No-slip condition in viscous flows",
+    "explanation": "In a viscous flow, the no‑slip condition creates shear that generates vorticity near walls; inviscid flows lack this mechanism."
+  },
+  {
+    "question": "The term 'tilting' in vortex dynamics refers to:",
+    "options": [
+      "Stretching a vortex tube along its axis.",
+      "Rotating the entire flow field.",
+      "Changing the direction of vorticity vector relative to itself.",
+      "Diffusing vorticity across streamlines."
+    ],
+    "correctAnswer": "Changing the direction of vorticity vector relative to itself.",
+    "explanation": "Tilting changes the orientation of a vortex line, creating components perpendicular to the original vorticity."
+  },
+  {
+    "question": "Which statement best describes the effect of viscosity on Kelvin’s circulation theorem?",
+    "options": [
+      "Viscosity has no effect; circulation is always conserved.",
+      "Viscosity introduces a source term that can alter circulation over time.",
+      "Viscosity only affects pressure, not circulation.",
+      "Viscosity eliminates all vorticity instantly."
+    ],
+    "correctAnswer": "Viscosity introduces a source term that can alter circulation over time.",
+    "explanation": "In viscous flows, the diffusion term in the vorticity equation allows circulation to change with time."
   }
 ]
