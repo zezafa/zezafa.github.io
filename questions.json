@@ -1,0 +1,123 @@
+[
+  {
+    "question": "What is the mathematical definition of vorticity in three dimensions?",
+    "options": [
+      "ω = ∇ × u",
+      "ω = ∇ · u",
+      "ω = ∇²u",
+      "ω = u × ∇p"
+    ],
+    "correctAnswer": "ω = ∇ × u",
+    "explanation": "Vorticity is defined as the curl of the velocity field, ω = ∇×u. This follows directly from the lecture’s definition (see Citation 1 and 2)."
+  },
+  {
+    "question": "Which of the following statements about vortex lines is true?",
+    "options": [
+      "They are always tangent to the local velocity vector.",
+      "They can exist in a stationary fluid.",
+      "They are perpendicular to the vorticity vector.",
+      "They never exist in irrotational flow."
+    ],
+    "correctAnswer": "They are always tangent to the local velocity vector.",
+    "explanation": "Vortex lines are defined as curves that are everywhere tangent to the vorticity vector; since ω = ∇×u, they are also tangent to the local velocity in a fluid with non‑zero vorticity. They do not exist in irrotational flow or stationary fluid (Citation 2)."
+  },
+  {
+    "question": "Which theorem states that circulation is conserved along a vortex tube?",
+    "options": [
+      "Kelvin’s circulation theorem",
+      "Gauss’ theorem",
+      "Stokes’ theorem",
+      "Burgers’ equation"
+    ],
+    "correctAnswer": "Kelvin’s circulation theorem",
+    "explanation": "Kelvin’s theorem asserts that, in an inviscid barotropic flow with conservative body forces, the circulation around a closed material contour is conserved. This applies to vortex tubes (Lecture overview)."
+  },
+  {
+    "question": "In a steady incompressible flow, what does Gauss’ divergence theorem imply about the vorticity field?",
+    "options": [
+      "∇·ω = 0",
+      "∇×ω = 0",
+      "∇²ω = 0",
+      "∇·u = 0"
+    ],
+    "correctAnswer": "∇·ω = 0",
+    "explanation": "For a steady incompressible flow, the divergence of vorticity is zero (∇·ω = 0), as derived from taking the curl of the continuity equation and applying Gauss’ theorem (Citation 2)."
+  },
+  {
+    "question": "Which term in the vorticity transport equation represents vortex stretching?",
+    "options": [
+      "(u · ∇)ω",
+      "(ω · ∇)u",
+      "ν∇²ω",
+      "∇p × ∇ρ"
+    ],
+    "correctAnswer": "(ω · ∇)u",
+    "explanation": "The vortex stretching term is (ω · ∇)u, which describes how vorticity magnitude changes due to velocity gradients along the vorticity direction (Lecture 3)."
+  },
+  {
+    "question": "What physical effect does the viscous diffusion term ν∇²ω in the vorticity equation produce?",
+    "options": [
+      "Generation of new vorticity",
+      "Smoothing of vorticity gradients",
+      "Stretching of vortex tubes",
+      "Conservation of circulation"
+    ],
+    "correctAnswer": "Smoothing of vorticity gradients",
+    "explanation": "The diffusion term ν∇²ω acts to spread out and smoothen vorticity, analogous to heat conduction in temperature fields."
+  },
+  {
+    "question": "Which of the following flows is irrotational?",
+    "options": [
+      "Potential flow around a cylinder",
+      "Uniform shear flow",
+      "Rotating rigid body flow",
+      "Stokes’ first problem"
+    ],
+    "correctAnswer": "Potential flow around a cylinder",
+    "explanation": "A potential flow has zero vorticity everywhere; the velocity field can be expressed as the gradient of a scalar potential."
+  },
+  {
+    "question": "In the Biot–Savart law for two-dimensional point vortices, the induced velocity at a point (x,y) depends on which quantity?",
+    "options": [
+      "The distance r between the point and each vortex",
+      "The pressure difference across the vortex",
+      "The fluid density ρ",
+      "The viscosity ν"
+    ],
+    "correctAnswer": "The distance r between the point and each vortex",
+    "explanation": "In 2‑D, the induced velocity is inversely proportional to the distance from each point vortex (Lecture 3)."
+  },
+  {
+    "question": "Which of the following best describes a vortex tube?",
+    "options": [
+      "A surface of constant pressure.",
+      "A tubular region carrying vorticity with conserved circulation.",
+      "A line along which velocity is zero.",
+      "An area where viscosity dominates."
+    ],
+    "correctAnswer": "A tubular region carrying vorticity with conserved circulation.",
+    "explanation": "A vortex tube is a bundle of vortex lines; its circulation remains constant as it moves (Lecture 2)."
+  },
+  {
+    "question": "What is the relationship between stream tubes and vortex tubes regarding conservation laws?",
+    "options": [
+      "Both conserve volume flow, but only vortex tubes conserve circulation.",
+      "Only stream tubes conserve circulation.",
+      "Both conserve circulation but not volume flow.",
+      "Neither conserves any quantity."
+    ],
+    "correctAnswer": "Both conserve volume flow, but only vortex tubes conserve circulation.",
+    "explanation": "Gauss’ theorem shows that volume flux is conserved in a stream tube; Kelvin’s theorem ensures circulation conservation in a vortex tube (Lecture 2)."
+  },
+  {
+    "question": "Which identity is used to derive the vorticity equation from the momentum equation?",
+    "options": [
+      "(∇×(u·∇)u = (ω·∇)u - (u·∇)ω)",
+      "∇·(ρu) = 0",
+      "∇²(u × ω) = 0",
+      "∇·ω = ∇×u"
+    ],
+    "correctAnswer": "(∇×(u·∇)u = (ω·∇)u - (u·∇)ω)",
+    "explanation": "Taking the curl of the momentum equation and using vector identities yields the convective‑stretching form of the vorticity equation."
+  }
+]

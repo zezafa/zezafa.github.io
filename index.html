@@ -1,25 +1,22 @@
 <!DOCTYPE html>
-<html>
-<script>
-function changeClass() {
-  document.getElementById("dut").classList.toggle("blue");
-  console.log("clicked");
-}
-</script>
-
+<html lang="en">
+<head>
+<link rel=“shortcut icon” href=“#”>
+<meta charset="UTF-8">
+<title>Flashcard MCQ Game</title>
+<link rel="stylesheet" href="style.css">
+</head>
 <body>
- <div id="dut" class="red" onclick="changeClass()"> </div>
+
+<div id="flashcard-container">
+
+    <div class="flashcard" id="flashcard">
+        <!-- Question / Answer will be inserted here by JS -->
+    </div>
+
+    <button id="nextBtn" disabled>Next →</button>
+</div>
+
+<script src="script.js"></script>
 </body>
-<style>
-#dut {
-      height: 2000px;
-      width: 1000px;      
-}
-
-.red { background-color: red; }
-
-.blue {
-    background-color: blue;
-}
-</style>
 </html>
