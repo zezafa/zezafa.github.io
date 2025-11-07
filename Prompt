@@ -1,0 +1,20 @@
+I want to learn advanced fluid dynamics and prepare for the exam. Therefore, we made a flashcard app, where we want to test our understanding. Uploaded you will find the lecture I want to prepare on. Subject is vorticity.
+
+GENERATE JSON FILE WITH 20 EXAM QUESTIONS:
+
+How should json file be structured:
+
+[
+  {
+    "question": "What is the capital of France?",
+    "options": ["Paris", "Berlin", "Rome", "Madrid"],
+    "correctAnswer": "Paris",
+    "explanation": "Paris has been France’s capital since 508 AD."
+  },
+  {
+    "question": "Who wrote 'To Kill a Mockingbird'?",
+    "options": ["Harper Lee", "Mark Twain", "Jane Austen", "Ernest Hemingway"],
+    "correctAnswer": "Harper Lee",
+    "explanation": "Published in 1960, it’s a classic of American literature."
+  }
+]
