@@ -1,188 +1,303 @@
 [
   {
-    "question": "What is another common name for low Reynolds number flow?",
-    "options": ["Turbulent flow", "Creeping flow", "Potential flow", "Inviscid flow"],
-    "correctAnswer": "Creeping flow",
-    "explanation": "Low Reynolds number flows are also called creeping or Stokes flows because inertial effects are negligible compared to viscous effects."
+    "question": "What is the defining characteristic of Stokes (creeping) flow?",
+    "options": ["High Reynolds number", "Negligible inertial forces", "Compressible flow", "Non-Newtonian behavior"],
+    "correctAnswer": "Negligible inertial forces",
+    "explanation": "Stokes flow occurs at very low Reynolds numbers where viscous forces dominate over inertial forces."
   },
   {
-    "question": "In Stokes flow, what happens to the advective acceleration term in the Navier–Stokes equations?",
-    "options": ["It dominates", "It oscillates", "It vanishes", "It becomes nonlinear"],
-    "correctAnswer": "It vanishes",
-    "explanation": "For Re → 0, the advective acceleration term (u·∇u) is negligible, simplifying the momentum equation to Stokes equations."
+    "question": "In Stokes flow around a sphere, the drag force is proportional to which quantity?",
+    "options": ["Velocity squared", "Viscosity", "Velocity", "Pressure gradient"],
+    "correctAnswer": "Velocity",
+    "explanation": "For creeping flow, the drag is linear in velocity, leading to Stokes’ law: F = 6πμaU."
   },
   {
-    "question": "In the dimensionless Navier–Stokes equation, what multiplies the inertial term?",
-    "options": ["1/Re", "Re", "μ", "ρ"],
-    "correctAnswer": "Re",
-    "explanation": "When made dimensionless, the Navier–Stokes equation includes the Reynolds number Re multiplying the inertial term."
+    "question": "What is the formula for drag force on a solid sphere in creeping flow?",
+    "options": ["F = 4πμaU", "F = 6πμaU", "F = 8πμaU", "F = 3πμa²U"],
+    "correctAnswer": "F = 6πμaU",
+    "explanation": "This is Stokes’ law, derived assuming Re ≪ 1 and a no-slip boundary condition."
   },
   {
-    "question": "For Re → 0, which term dominates the Navier–Stokes equations?",
-    "options": ["Pressure gradient", "Viscous term", "Inertial term", "Convective acceleration"],
-    "correctAnswer": "Viscous term",
-    "explanation": "At very low Reynolds number, viscous forces dominate over inertia and pressure gradients balance viscous diffusion."
+    "question": "Which assumption allows the use of the stream function ψ in Stokes flow past a sphere?",
+    "options": ["Two-dimensional flow", "Irrotational flow", "Axisymmetric flow", "Compressible flow"],
+    "correctAnswer": "Axisymmetric flow",
+    "explanation": "In axisymmetric incompressible flow, ψ can represent the velocity field compactly."
   },
   {
-    "question": "Which condition must the velocity field in Stokes flow satisfy?",
-    "options": ["∇·u = 0", "∇×u = 0", "u = 0", "∇p = 0"],
-    "correctAnswer": "∇·u = 0",
-    "explanation": "In incompressible Stokes flow, continuity requires the velocity field to be divergence-free."
+    "question": "What is the nature of streamlines in Stokes flow past a sphere?",
+    "options": ["Fore–aft asymmetry", "Symmetry about the equatorial plane", "Vortex shedding", "Boundary layer separation"],
+    "correctAnswer": "Symmetry about the equatorial plane",
+    "explanation": "Stokes flow is steady and symmetric because inertial terms are negligible."
   },
   {
-    "question": "The vorticity in Stokes flow satisfies which equation?",
-    "options": ["∇²ω = 0", "∇·ω = 0", "∇×ω = 0", "∇²ω = Re ω"],
-    "correctAnswer": "∇²ω = 0",
-    "explanation": "Taking the curl of the Stokes equation gives the biharmonic equation for vorticity: ∇²ω = 0."
+    "question": "Which term in the Navier–Stokes equation is neglected for creeping flow?",
+    "options": ["Pressure gradient", "Viscous term", "Inertial term", "Body force term"],
+    "correctAnswer": "Inertial term",
+    "explanation": "The low Reynolds number assumption makes inertial effects negligible."
   },
   {
-    "question": "Stokes equations are valid for flows where:",
-    "options": ["Re ≫ 1", "Re ≈ 1", "Re ≪ 1", "Re = ∞"],
-    "correctAnswer": "Re ≪ 1",
-    "explanation": "Creeping or Stokes flow occurs at very small Reynolds numbers where inertial effects are negligible."
+    "question": "What is the drag coefficient CD for a sphere in creeping flow?",
+    "options": ["24/Re", "1.2", "12/Re", "0.44"],
+    "correctAnswer": "24/Re",
+    "explanation": "For Re ≪ 1, CD = 24/Re, showing inverse proportionality to Reynolds number."
   },
   {
-    "question": "What is a typical application of Stokes flow?",
-    "options": ["Airflow over a wing", "Flow past a small particle", "Shock waves", "Supersonic jets"],
-    "correctAnswer": "Flow past a small particle",
-    "explanation": "At small scales and low speeds, particles in viscous fluids experience Stokes flow conditions."
+    "question": "What boundary condition is applied at the sphere surface in Stokes flow?",
+    "options": ["Free-slip", "No-slip", "Constant pressure", "Zero shear stress"],
+    "correctAnswer": "No-slip",
+    "explanation": "Fluid velocity equals sphere velocity at the surface, u = 0 in stationary-sphere reference frame."
   },
   {
-    "question": "What type of symmetry do streamlines in Stokes flow exhibit?",
-    "options": ["Random", "Fore-and-aft symmetry", "Radial symmetry", "Periodic symmetry"],
-    "correctAnswer": "Fore-and-aft symmetry",
-    "explanation": "Without inertial effects, the flow around objects is symmetric upstream and downstream."
+    "question": "How does Oseen’s correction modify Stokes’ law?",
+    "options": ["Adds inertial correction terms", "Removes viscosity effects", "Applies to compressible flow", "Assumes potential flow"],
+    "correctAnswer": "Adds inertial correction terms",
+    "explanation": "Oseen’s approximation accounts for small but finite inertia in slightly higher Re flows."
   },
   {
-    "question": "In lubrication theory, what assumption is made about film thickness h relative to length L?",
-    "options": ["h ≫ L", "h = L", "h ≪ L", "h ~ L"],
-    "correctAnswer": "h ≪ L",
-    "explanation": "The fineness ratio ε = h/L is small, simplifying the equations by neglecting certain derivatives."
+    "question": "For a gas bubble in creeping flow, what is the drag force?",
+    "options": ["6πμaU", "4πμaU", "2πμaU", "8πμaU"],
+    "correctAnswer": "4πμaU",
+    "explanation": "For a clean gas–liquid interface, the internal viscosity is negligible, reducing drag."
   },
   {
-    "question": "What forces dominate in lubrication flow?",
-    "options": ["Inertial and gravity forces", "Viscous and pressure forces", "Centrifugal and Coriolis forces", "Elastic and magnetic forces"],
-    "correctAnswer": "Viscous and pressure forces",
-    "explanation": "In lubrication flows, viscous and pressure terms dominate, while inertial effects are negligible."
+    "question": "What is the similarity variable for the suddenly started flat plate problem?",
+    "options": ["η = y/t", "η = y/νt", "η = y/(νt)¹ᐟ²", "η = yU/ν"],
+    "correctAnswer": "η = y/(νt)¹ᐟ²",
+    "explanation": "This variable combines y and t to reduce the PDE to an ODE in similarity form."
   },
   {
-    "question": "What does the bearing number Λ represent in lubrication theory?",
-    "options": ["Ratio of inertia to viscous forces", "Ratio of viscous to pressure forces", "Ratio of pressure to gravity forces", "None of the above"],
-    "correctAnswer": "Ratio of viscous to pressure forces",
-    "explanation": "The bearing number Λ compares the relative importance of viscous and pressure forces in lubrication flows."
+    "question": "The unsteady flat plate flow satisfies which differential equation?",
+    "options": ["∂u/∂x = 0", "∂²u/∂y² = 0", "∂u/∂t = ν ∂²u/∂y²", "∂²u/∂x² = ν ∂u/∂t"],
+    "correctAnswer": "∂u/∂t = ν ∂²u/∂y²",
+    "explanation": "This diffusion-type equation describes momentum diffusion in the viscous layer."
   },
   {
-    "question": "Which assumption simplifies the flow between parallel plates in a lubrication problem?",
-    "options": ["∂/∂x ~ 1/h", "∂/∂y ~ 1/L", "∂/∂x ≪ ∂/∂y", "∂/∂y ≪ ∂/∂x"],
-    "correctAnswer": "∂/∂x ≪ ∂/∂y",
-    "explanation": "In lubrication flows, gradients across the film thickness dominate over streamwise gradients."
+    "question": "What is the physical meaning of the similarity variable η?",
+    "options": ["Dimensionless time", "Ratio of convection to diffusion", "Scaled distance from wall", "Local Reynolds number"],
+    "correctAnswer": "Scaled distance from wall",
+    "explanation": "η represents a distance normalized by the diffusive length scale (νt)¹ᐟ²."
   },
   {
-    "question": "Hele-Shaw flow is a type of:",
-    "options": ["Turbulent flow", "Pressure-driven viscous flow between plates", "Inviscid flow", "Rotating flow"],
-    "correctAnswer": "Pressure-driven viscous flow between plates",
-    "explanation": "Hele-Shaw flow describes viscous flow between two closely spaced parallel plates, often used in modeling mold flows."
+    "question": "What is the analytical solution for velocity in the impulsively started plate problem?",
+    "options": ["u/U = erf(η)", "u/U = erfc(η)", "u/U = e^(-η²)", "u/U = 1 - e^(-η²)"],
+    "correctAnswer": "u/U = erf(η)",
+    "explanation": "The error function solution arises from diffusion of momentum from the moving wall."
   },
   {
-    "question": "What is the analogy between low Re flow and ideal flow?",
-    "options": ["Both dominated by inertia", "Both independent of viscosity in certain conditions", "Both involve shock waves", "Both have high pressure gradients"],
-    "correctAnswer": "Both independent of viscosity in certain conditions",
-    "explanation": "Solutions to both Stokes flow and ideal flow can become independent of viscosity, though for different reasons."
+    "question": "What is the shear stress at the wall for the impulsively started plate?",
+    "options": ["μU/(νt)¹ᐟ²", "μU/δ", "ρU²", "0"],
+    "correctAnswer": "μU/(νt)¹ᐟ²",
+    "explanation": "τw = μ (∂u/∂y)|₀ gives a 1/√t dependence as diffusion thickens the layer."
   },
   {
-    "question": "Which exact solution represents wall-driven steady flow?",
-    "options": ["Poiseuille flow", "Couette flow", "Stagnation flow", "Hagen flow"],
-    "correctAnswer": "Couette flow",
-    "explanation": "Couette flow is the steady viscous flow between surfaces, one or both moving tangentially to the other."
+    "question": "How does the shear layer thickness δ scale with time t?",
+    "options": ["δ ∝ t", "δ ∝ t¹ᐟ²", "δ ∝ 1/t", "δ ∝ 1/t¹ᐟ²"],
+    "correctAnswer": "δ ∝ t¹ᐟ²",
+    "explanation": "Momentum diffuses as √(νt), similar to heat conduction."
   },
   {
-    "question": "In fully developed Poiseuille flow, what drives the motion?",
-    "options": ["Shear stress at the walls", "Pressure gradient", "Buoyancy", "Rotation"],
-    "correctAnswer": "Pressure gradient",
-    "explanation": "Poiseuille flow is pressure-driven steady viscous flow through a channel or pipe."
+    "question": "For an oscillating plate, the velocity decays with distance y as?",
+    "options": ["Exponentially", "Linearly", "Quadratically", "Sinusoidally"],
+    "correctAnswer": "Exponentially",
+    "explanation": "The oscillatory Stokes layer exhibits exponential decay: u ∝ e^{-y/δ}."
   },
   {
-    "question": "What distinguishes Hagen–Poiseuille flow from plane Poiseuille flow?",
-    "options": ["It is unsteady", "It occurs in a circular pipe", "It includes rotation", "It is inviscid"],
-    "correctAnswer": "It occurs in a circular pipe",
-    "explanation": "Hagen–Poiseuille flow describes laminar flow through a circular pipe under a pressure gradient."
+    "question": "What is the characteristic thickness of the oscillating plate boundary layer?",
+    "options": ["δ = (ν/ω)", "δ = (ν/ω)¹ᐟ²", "δ = 4(ν/ω)¹ᐟ²", "δ = (νω)¹ᐟ²"],
+    "correctAnswer": "δ = 4(ν/ω)¹ᐟ²",
+    "explanation": "From the lecture, the diffusive distance is of order δ ~ 4(ν/ω)¹ᐟ²."
   },
   {
-    "question": "For very small Stokes numbers (Stk ≪ 1), what is true about particles in the flow?",
-    "options": ["They deviate from the fluid path", "They follow the flow closely", "They experience high inertia", "They move independently of the fluid"],
-    "correctAnswer": "They follow the flow closely",
-    "explanation": "At low Stokes numbers, particle inertia is negligible and particles follow streamlines closely."
+    "question": "In the unsteady plate problem, what does erfc(β) = 0.01 define?",
+    "options": ["Pressure gradient", "Thermal boundary", "Shear layer thickness", "Stagnation point"],
+    "correctAnswer": "Shear layer thickness",
+    "explanation": "The distance where u/U = 0.01 marks the edge of the velocity diffusion zone."
   },
   {
-    "question": "Which of the following is NOT a characteristic of Stokes flow?",
-    "options": ["Independent of viscosity", "Fore-aft symmetry", "Negligible inertia", "Large Reynolds number"],
-    "correctAnswer": "Large Reynolds number",
-    "explanation": "Stokes flow occurs at low Reynolds number where inertial effects are small and viscosity dominates."
+    "question": "What is the main difference between a suddenly started and a suddenly stopped plate?",
+    "options": ["Opposite initial conditions", "Different boundary conditions", "Different viscosity", "Presence of pressure gradient"],
+    "correctAnswer": "Opposite initial conditions",
+    "explanation": "The solutions are mirror images because one starts motion and the other halts it."
   },
   {
-    "question": "If U = 0.01 m/s, L = 0.01 m, and ν = 1×10⁻⁶ m²/s, what is Re?",
-    "options": ["0.01", "0.1", "100", "10"],
-    "correctAnswer": "100",
-    "explanation": "Re = UL/ν = (0.01×0.01)/1×10⁻⁶ = 100, which is laminar but not creeping flow."
+    "question": "What type of partial differential equation is ∂u/∂t = ν∂²u/∂y²?",
+    "options": ["Elliptic", "Parabolic", "Hyperbolic", "Mixed"],
+    "correctAnswer": "Parabolic",
+    "explanation": "It represents diffusion in time, characteristic of parabolic equations."
   },
   {
-    "question": "If ν = 1×10⁻⁶ m²/s and we want Re < 1, what maximum velocity U can we have for L = 1 mm?",
-    "options": ["0.001 m/s", "0.001 mm/s", "1 m/s", "0.1 m/s"],
-    "correctAnswer": "0.001 m/s",
-    "explanation": "Re = UL/ν < 1 ⇒ U < ν/L = 1×10⁻⁶ / 1×10⁻³ = 0.001 m/s."
+    "question": "What happens to the velocity far from the wall in the suddenly started plate case?",
+    "options": ["Becomes zero", "Equals U", "Oscillates", "Becomes negative"],
+    "correctAnswer": "Becomes zero",
+    "explanation": "The flow far from the plate remains undisturbed initially, u → 0 as y → ∞."
   },
   {
-    "question": "A microorganism swims in water with characteristic speed 10⁻⁴ m/s and size 10⁻⁵ m. What is Re?",
-    "options": ["10⁻⁶", "10⁻³", "1", "100"],
-    "correctAnswer": "10⁻³",
-    "explanation": "Re = UL/ν = (10⁻⁴×10⁻⁵)/(10⁻⁶) = 10⁻³, confirming creeping flow conditions."
+    "question": "In the Stokes flow past a sphere, which components of vorticity are nonzero?",
+    "options": ["All components", "Radial only", "Azimuthal only", "Axial only"],
+    "correctAnswer": "Azimuthal only",
+    "explanation": "In axisymmetric flow, the vorticity exists only in the azimuthal (φ) direction."
   },
   {
-    "question": "If the pressure drop Δp = 100 Pa drives Poiseuille flow through a 1 m long capillary with radius 0.001 m, how does doubling the radius affect flow rate?",
-    "options": ["Halves it", "Doubles it", "Increases by 16×", "Remains same"],
-    "correctAnswer": "Increases by 16×",
-    "explanation": "Poiseuille’s law gives Q ∝ r⁴, so doubling r increases flow rate by 2⁴ = 16."
+    "question": "What is the significance of similarity solutions in fluid dynamics?",
+    "options": ["They linearize the equations", "They collapse variables into a single parameter", "They remove boundary conditions", "They apply only to turbulent flow"],
+    "correctAnswer": "They collapse variables into a single parameter",
+    "explanation": "Similarity reduces PDEs to ODEs by identifying combinations of variables that preserve the solution form."
   },
   {
-    "question": "If h = 0.001 m and L = 0.1 m, what is the fineness ratio ε?",
-    "options": ["0.001", "0.01", "0.1", "1"],
-    "correctAnswer": "0.01",
-    "explanation": "ε = h/L = 0.001 / 0.1 = 0.01, satisfying lubrication assumption (ε ≪ 1)."
+    "question": "Which experiment used Stokes’ drag law to measure the electron charge?",
+    "options": ["Millikan oil drop experiment", "Rutherford scattering", "Faraday’s ice pail", "Taylor–Couette flow"],
+    "correctAnswer": "Millikan oil drop experiment",
+    "explanation": "The balance between electric and Stokes’ drag forces was used to infer charge quantization."
   },
   {
-    "question": "If a small sphere moves slowly in a viscous fluid, which force dominates its motion?",
-    "options": ["Drag ∝ U²", "Drag ∝ U", "Lift force", "Buoyancy"],
-    "correctAnswer": "Drag ∝ U",
-    "explanation": "In Stokes regime, drag is linearly proportional to velocity (Fd = 6πμRU)."
+    "question": "Why is the flow field in creeping flow independent of fluid density?",
+    "options": ["Because density cancels in the inertial term which is negligible", "Because viscosity is constant", "Because pressure gradient dominates", "Because the flow is incompressible"],
+    "correctAnswer": "Because density cancels in the inertial term which is negligible",
+    "explanation": "At low Re, the inertial term ρ(u·∇)u ≈ 0, so ρ drops out of the governing equations."
   },
   {
-    "question": "If viscosity doubles, how does the terminal velocity of a small sedimenting sphere change (all else constant)?",
-    "options": ["Doubles", "Halves", "Unchanged", "Increases by √2"],
-    "correctAnswer": "Halves",
-    "explanation": "Terminal velocity in Stokes’ law is inversely proportional to viscosity (U ∝ 1/μ)."
+    "question": "What does the Reynolds number represent physically in the context of creeping flow?",
+    "options": ["Ratio of viscous to inertial forces", "Ratio of inertial to viscous forces", "Ratio of pressure to viscous forces", "Ratio of shear to gravity forces"],
+    "correctAnswer": "Ratio of inertial to viscous forces",
+    "explanation": "Re = ρUL/μ measures the relative strength of inertia; Re ≪ 1 means viscous effects dominate."
   },
   {
-    "question": "For a particle radius R = 10⁻⁶ m and μ = 10⁻³ Pa·s, what is the drag coefficient per unit velocity?",
-    "options": ["6πμR", "3πμR", "6μR²", "πμR"],
-    "correctAnswer": "6πμR",
-    "explanation": "The drag force in Stokes flow is Fd = 6πμRU, so drag per unit velocity is 6πμR."
+    "question": "Why is the Stokes solution symmetric front to back around a sphere?",
+    "options": ["Pressure field is isotropic", "Inertia is negligible so no wake forms", "Viscosity is zero", "Sphere rotates"],
+    "correctAnswer": "Inertia is negligible so no wake forms",
+    "explanation": "With no convective term, there is no asymmetry; the flow reverses perfectly behind the sphere."
   },
   {
-    "question": "If a thin oil film has h = 1×10⁻⁵ m and velocity 1×10⁻³ m/s over 1 cm length, what is the approximate order of Re?",
-    "options": ["10⁻⁴", "10⁻²", "1", "100"],
-    "correctAnswer": "10⁻⁴",
-    "explanation": "Re = UL/ν ≈ (10⁻³×10⁻²)/10⁻⁶ = 0.1, but for film thickness scaling h, effective Reh ≈ Uh/ν = 10⁻⁴."
+    "question": "Why does the drag coefficient for a sphere decrease with increasing Reynolds number in the laminar regime?",
+    "options": ["Pressure gradient reverses", "Inertia starts to dominate, reducing viscous relative importance", "Viscosity increases with Re", "Flow becomes compressible"],
+    "correctAnswer": "Inertia starts to dominate, reducing viscous relative importance",
+    "explanation": "CD = 24/Re; as Re increases, viscous drag becomes less dominant compared to inertia."
   },
   {
-    "question": "If the flow in a narrow gap has ε = 0.01 and ReL = 100, what is ReL ε²?",
-    "options": ["0.01", "0.1", "1", "10"],
-    "correctAnswer": "0.01",
-    "explanation": "ReL ε² = 100 × (0.01)² = 0.01 ≪ 1, confirming lubrication approximation validity."
+    "question": "How does the concept of similarity simplify solving PDEs in fluid dynamics?",
+    "options": ["It transforms the PDE into an algebraic equation", "It reduces the number of independent variables", "It eliminates all boundary conditions", "It makes equations linear"],
+    "correctAnswer": "It reduces the number of independent variables",
+    "explanation": "By finding a combination of variables (η) that collapses profiles, PDEs become solvable ODEs."
   },
   {
-    "question": "For Couette flow between two plates, if top plate moves twice as fast, how does shear stress change?",
-    "options": ["Halves", "Doubles", "Unchanged", "Becomes zero"],
-    "correctAnswer": "Doubles",
-    "explanation": "Shear stress τ = μ(U/h), directly proportional to the velocity difference between plates."
+    "question": "In the unsteady flat plate problem, what balances the temporal acceleration term?",
+    "options": ["Convective acceleration", "Viscous diffusion term", "Pressure gradient", "Body forces"],
+    "correctAnswer": "Viscous diffusion term",
+    "explanation": "The governing equation ∂u/∂t = ν∂²u/∂y² represents a balance between local acceleration and viscous diffusion."
+  },
+  {
+    "question": "What does the error function solution physically represent in the impulsively started plate problem?",
+    "options": ["Propagation of a shock wave", "Diffusion of momentum into the fluid", "Growth of turbulence", "Elastic deformation of wall"],
+    "correctAnswer": "Diffusion of momentum into the fluid",
+    "explanation": "The erf profile describes how the wall’s motion gradually affects fluid layers farther away."
+  },
+  {
+    "question": "Why is the unsteady plate flow an example of a self-similar flow?",
+    "options": ["Its velocity profile keeps the same shape over time", "It reaches steady state immediately", "It depends on both y and t separately", "It has periodic oscillations"],
+    "correctAnswer": "Its velocity profile keeps the same shape over time",
+    "explanation": "Profiles collapse onto a universal curve when plotted against η = y/√(νt)."
+  },
+  {
+    "question": "If the viscosity doubles in a Stokes flow, what happens to the drag force on the sphere?",
+    "options": ["It doubles", "It halves", "It remains the same", "It depends on Re"],
+    "correctAnswer": "It doubles",
+    "explanation": "From F = 6πμaU, drag is directly proportional to viscosity."
+  },
+  {
+    "question": "Why can’t potential flow solutions accurately predict drag on a real sphere at low Reynolds number?",
+    "options": ["Because potential flow neglects viscous effects", "Because pressure field is zero", "Because potential flow assumes compressibility", "Because the flow is unsteady"],
+    "correctAnswer": "Because potential flow neglects viscous effects",
+    "explanation": "Inviscid theory gives zero drag (d’Alembert’s paradox), which contradicts experiments."
+  },
+  {
+    "question": "What happens to the vorticity field in creeping flow around a sphere?",
+    "options": ["It is confined near the wall", "It extends far into the field", "It oscillates periodically", "It vanishes entirely"],
+    "correctAnswer": "It extends far into the field",
+    "explanation": "Without inertia to convect it away, vorticity diffuses smoothly throughout the flow domain."
+  },
+  {
+    "question": "How does the Stokes layer thickness in the oscillating plate depend on frequency?",
+    "options": ["Increases with ω", "Decreases with ω", "Independent of ω", "Proportional to ω"],
+    "correctAnswer": "Decreases with ω",
+    "explanation": "δ ∝ (ν/ω)¹ᐟ²; higher frequency oscillations confine the motion to thinner layers."
+  },
+  {
+    "question": "If the plate in the impulsive-start problem suddenly stops, what happens to the existing velocity field?",
+    "options": ["It instantaneously stops", "It decays by viscous diffusion", "It reverses direction", "It oscillates around zero"],
+    "correctAnswer": "It decays by viscous diffusion",
+    "explanation": "Momentum diffuses away until the fluid returns to rest, producing a mirror solution."
+  },
+  {
+    "question": "What key assumption allows neglecting pressure gradients in the unsteady flat plate problem?",
+    "options": ["Flow is parallel and incompressible", "Fluid is inviscid", "Temperature is constant", "Gravity acts in the x-direction"],
+    "correctAnswer": "Flow is parallel and incompressible",
+    "explanation": "With no streamwise variation, ∂p/∂x = 0 and the x-momentum equation simplifies."
+  },
+  {
+    "question": "Why is the Stokes flow solution valid only at very low Reynolds numbers?",
+    "options": ["Because viscosity must dominate inertia", "Because it assumes high density", "Because it ignores boundary conditions", "Because it uses compressible flow equations"],
+    "correctAnswer": "Because viscosity must dominate inertia",
+    "explanation": "As Re increases, inertial effects (Oseen corrections) become non-negligible."
+  },
+  {
+    "question": "What physical mechanism causes the flow near an oscillating plate to lag in phase with the wall motion?",
+    "options": ["Viscous diffusion delay", "Inertia of the wall", "Pressure wave reflection", "Thermal coupling"],
+    "correctAnswer": "Viscous diffusion delay",
+    "explanation": "Momentum transfer via viscosity introduces a phase lag between wall and fluid velocity."
+  },
+  {
+    "question": "How does the no-slip condition influence the form of the velocity profile near a wall?",
+    "options": ["It creates velocity gradients and shear stress", "It removes vorticity", "It prevents viscous diffusion", "It makes flow irrotational"],
+    "correctAnswer": "It creates velocity gradients and shear stress",
+    "explanation": "The difference between wall and fluid velocity induces viscous shear layers."
+  },
+  {
+    "question": "Why does Stokes flow around a cylinder differ from that around a sphere?",
+    "options": ["Different dimensionality and logarithmic terms appear", "Cylinder has zero drag", "Viscosity changes", "Cylinder lacks symmetry"],
+    "correctAnswer": "Different dimensionality and logarithmic terms appear",
+    "explanation": "The 2D nature of a cylinder introduces logarithmic divergence absent in spherical flow."
+  },
+  {
+    "question": "What does the stream function formulation guarantee in incompressible axisymmetric flow?",
+    "options": ["Continuity equation is automatically satisfied", "Flow is irrotational", "Pressure gradient is zero", "Velocity is uniform"],
+    "correctAnswer": "Continuity equation is automatically satisfied",
+    "explanation": "Defining u_r and u_θ from ψ ensures ∇·u = 0 identically."
+  },
+  {
+    "question": "Why can we assume ρ = constant in the derivation of the unsteady plate problem?",
+    "options": ["The flow is incompressible and pressure variations are small", "Density cancels in the viscous term", "Viscosity is negligible", "Temperature is uniform"],
+    "correctAnswer": "The flow is incompressible and pressure variations are small",
+    "explanation": "Small velocities and low Mach numbers justify the incompressibility assumption."
+  },
+  {
+    "question": "How would doubling the sphere radius affect the drag force in creeping flow?",
+    "options": ["Double it", "Increase by factor of four", "Increase by factor of two", "Increase linearly with radius"],
+    "correctAnswer": "Increase linearly with radius",
+    "explanation": "F = 6πμaU → proportional to a, not a², in the Stokes regime."
+  },
+  {
+    "question": "Why does Stokes flow predict zero lift force on a sphere?",
+    "options": ["Symmetry and absence of inertia prevent asymmetric forces", "Pressure is uniform", "Viscosity cancels", "Sphere rotates too slowly"],
+    "correctAnswer": "Symmetry and absence of inertia prevent asymmetric forces",
+    "explanation": "Without inertial deflection, lift cannot develop."
+  },
+  {
+    "question": "What is the effect of adding a small but finite Reynolds number correction (Oseen flow)?",
+    "options": ["Breaks flow symmetry and slightly reduces drag", "Increases viscosity", "Eliminates vorticity", "Removes steady state"],
+    "correctAnswer": "Breaks flow symmetry and slightly reduces drag",
+    "explanation": "Including inertia leads to a wake and modifies the drag coefficient downward."
+  },
+  {
+    "question": "Why do we use the error function instead of exponential functions in unsteady viscous flow?",
+    "options": ["Boundary conditions at infinity are easier satisfied", "It linearizes the Navier–Stokes equation", "It avoids oscillations", "It conserves mass"],
+    "correctAnswer": "Boundary conditions at infinity are easier satisfied",
+    "explanation": "The erf solution tends to one smoothly, fitting no-slip and far-field conditions."
+  },
+  {
+    "question": "In the impulsively started plate problem, what quantity is analogous to heat in conduction?",
+    "options": ["Momentum", "Pressure", "Vorticity", "Density"],
+    "correctAnswer": "Momentum",
+    "explanation": "The equation ∂u/∂t = ν∂²u/∂y² mirrors the heat equation with momentum as the diffusing property."
   }
 ]
+
