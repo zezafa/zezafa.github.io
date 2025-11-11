@@ -1,207 +1,122 @@
 [
   {
-    "question": "Who introduced the boundary layer concept in fluid dynamics?",
-    "options": ["Isaac Newton", "Ludwig Prandtl", "Daniel Bernoulli", "Osborne Reynolds"],
-    "correctAnswer": "Ludwig Prandtl",
-    "explanation": "Prandtl reconciled inviscid flow theory with real viscous effects by introducing the boundary layer concept."
-  },
-  {
     "question": "What defines the boundary layer thickness δ?",
-    "options": [
-      "The distance where velocity reaches 99% of the free-stream velocity",
-      "The distance where shear stress vanishes",
-      "The distance where vorticity is zero",
-      "The displacement of streamlines due to viscosity"
-    ],
-    "correctAnswer": "The distance where velocity reaches 99% of the free-stream velocity",
-    "explanation": "Boundary layer thickness δ is the distance from the wall where u ≈ 0.99U∞."
+    "options": ["Where velocity reaches 95% of U∞", "Where velocity reaches 99% of U∞", "Where shear stress becomes zero", "Where vorticity vanishes"],
+    "correctAnswer": "Where velocity reaches 99% of U∞",
+    "explanation": "Boundary layer thickness δ is the distance from the wall where velocity reaches approximately 99% of the free-stream value."
   },
   {
-    "question": "What does the displacement thickness δ* represent physically?",
-    "options": [
-      "Loss of kinetic energy in the layer",
-      "Momentum loss due to viscosity",
-      "The distance by which streamlines are displaced outward by the boundary layer",
-      "The distance to where viscous effects cease"
-    ],
-    "correctAnswer": "The distance by which streamlines are displaced outward by the boundary layer",
-    "explanation": "δ* measures how much the presence of the boundary layer displaces the outer flow."
+    "question": "What is the displacement thickness δ* physically representing?",
+    "options": ["Loss of mass due to viscosity", "Momentum deficit", "Displacement of the inviscid streamline due to boundary layer growth", "Pressure variation along the wall"],
+    "correctAnswer": "Displacement of the inviscid streamline due to boundary layer growth",
+    "explanation": "δ* represents the amount by which the outer potential flow is displaced due to the boundary layer."
   },
   {
-    "question": "What is the formula for displacement thickness δ*?",
-    "options": [
-      "∫(1 - u/U) dy",
-      "∫(u/U) dy",
-      "∫(u²/U²) dy",
-      "∫(1 - u²/U²) dy"
-    ],
-    "correctAnswer": "∫(1 - u/U) dy",
-    "explanation": "δ* = ∫₀^∞ (1 - u/U∞) dy expresses the reduction in mass flow compared to ideal flow."
+    "question": "Which of the following best describes the momentum thickness θ?",
+    "options": ["It measures wall shear stress directly", "It quantifies loss of kinetic energy", "It measures the reduction in momentum flux due to viscous effects", "It represents the total viscous dissipation"],
+    "correctAnswer": "It measures the reduction in momentum flux due to viscous effects",
+    "explanation": "θ indicates how much momentum is lost in the boundary layer relative to the inviscid case."
   },
   {
-    "question": "What does the momentum thickness θ represent?",
-    "options": [
-      "Loss of energy due to pressure gradient",
-      "Equivalent distance for momentum deficit caused by viscosity",
-      "The thickness of laminar flow region",
-      "A measure of wall shear stress"
-    ],
-    "correctAnswer": "Equivalent distance for momentum deficit caused by viscosity",
-    "explanation": "θ = ∫₀^∞ (u/U)(1 - u/U) dy represents the momentum loss due to the boundary layer."
+    "question": "What is the typical range of the shape factor H for laminar boundary layers?",
+    "options": ["1.3–2.5", "2.0–4.0", "4.0–6.0", "0.5–1.0"],
+    "correctAnswer": "2.0–4.0",
+    "explanation": "For laminar flow, H = δ*/θ typically ranges from 2.0 to 4.0."
   },
   {
-    "question": "What is the shape factor H defined as?",
-    "options": ["δ/θ", "θ/δ*", "δ*/θ", "δ* + θ"],
-    "correctAnswer": "δ*/θ",
-    "explanation": "H = δ*/θ; for laminar flat-plate flow, H ≈ 2.59."
+    "question": "What is the typical range of the shape factor H for turbulent boundary layers?",
+    "options": ["2.0–4.0", "1.3–2.5", "4.0–6.0", "0.5–1.0"],
+    "correctAnswer": "1.3–2.5",
+    "explanation": "For turbulent flow, the shape factor is smaller, indicating a fuller velocity profile."
   },
   {
-    "question": "What does a large shape factor H indicate?",
-    "options": [
-      "Strong acceleration in the boundary layer",
-      "A thick, developing laminar layer",
-      "Adverse pressure gradient and possible separation",
-      "Fully turbulent flow"
-    ],
-    "correctAnswer": "Adverse pressure gradient and possible separation",
-    "explanation": "High H indicates a thick velocity profile typical before separation."
+    "question": "What does the van Kármán integral relation primarily relate?",
+    "options": ["Pressure gradient, displacement thickness, and wall shear stress", "Vorticity, viscosity, and temperature gradient", "Stream function and vorticity", "Flow acceleration and energy dissipation"],
+    "correctAnswer": "Pressure gradient, displacement thickness, and wall shear stress",
+    "explanation": "It provides an integral relation linking wall shear stress and the rate of change of momentum thickness."
   },
   {
-    "question": "Why can pressure be assumed constant across a thin boundary layer?",
-    "options": [
-      "Because viscous forces dominate pressure gradients",
-      "Because the boundary layer is incompressible",
-      "Because the flow is two-dimensional",
-      "Because the pressure field is dictated by the outer inviscid flow"
-    ],
-    "correctAnswer": "Because the pressure field is dictated by the outer inviscid flow",
-    "explanation": "Across a thin layer, p ≈ p_e(x) since dp/dy ≈ 0."
+    "question": "Why are boundary layer equations simplified compared to full Navier–Stokes equations?",
+    "options": ["Because viscosity is neglected", "Because inertia terms are small", "Because ∂²u/∂y² ≫ ∂²u/∂x² and pressure is nearly constant across the layer", "Because density variations dominate"],
+    "correctAnswer": "Because ∂²u/∂y² ≫ ∂²u/∂x² and pressure is nearly constant across the layer",
+    "explanation": "These approximations lead to Prandtl’s boundary layer equations valid for high Reynolds numbers."
   },
   {
-    "question": "What type of PDE are the laminar boundary layer equations?",
-    "options": ["Elliptic", "Parabolic", "Hyperbolic", "Linear"],
-    "correctAnswer": "Parabolic",
-    "explanation": "Boundary layer equations are parabolic, so they can be solved by marching downstream."
+    "question": "What does the Thwaites method provide an estimate for?",
+    "options": ["Boundary layer thickness only", "Transition Reynolds number", "Wall shear stress and point of separation", "Vorticity distribution"],
+    "correctAnswer": "Wall shear stress and point of separation",
+    "explanation": "Thwaites’ method gives approximate values for wall shear and separation using an integral approach."
   },
   {
-    "question": "What is the physical meaning of a parabolic PDE system in boundary layers?",
-    "options": [
-      "Flow depends only on local upstream conditions",
-      "Flow depends on entire domain simultaneously",
-      "Pressure is uniform in both directions",
-      "Flow field must satisfy continuity globally"
-    ],
-    "correctAnswer": "Flow depends only on local upstream conditions",
-    "explanation": "Parabolic equations allow stepwise (marching) solutions from the leading edge."
+    "question": "The Thwaites parameter λ involves which quantities?",
+    "options": ["Velocity gradient and kinematic viscosity", "Pressure and density", "Vorticity and shear rate", "Reynolds stress and velocity"],
+    "correctAnswer": "Velocity gradient and kinematic viscosity",
+    "explanation": "λ = θ² (dU/dx)/ν is used in Thwaites’ method to characterize the flow state."
   },
   {
-    "question": "What assumption allows the Blasius similarity solution to exist?",
-    "options": [
-      "Constant density and zero pressure gradient",
-      "Variable viscosity and compressibility",
-      "Curved wall geometry",
-      "Adverse pressure gradient"
-    ],
-    "correctAnswer": "Constant density and zero pressure gradient",
-    "explanation": "Blasius solution applies to steady, 2D, incompressible flow over a flat plate with dp/dx=0."
+    "question": "In the Thwaites method, a negative λ indicates:",
+    "options": ["Acceleration of the boundary layer", "Deceleration and possible flow separation", "Constant pressure flow", "Turbulent transition"],
+    "correctAnswer": "Deceleration and possible flow separation",
+    "explanation": "Negative λ means adverse pressure gradient, possibly leading to separation."
   },
   {
-    "question": "What is the governing ODE for the Blasius solution?",
-    "options": [
-      "f‴ + f f″ = 0",
-      "f″ + f f′ = 0",
-      "f″′ + f″ = 0",
-      "f‴ + f′ f′ = 0"
-    ],
-    "correctAnswer": "f‴ + f f″ = 0",
-    "explanation": "Derived from the similarity transformation of the steady 2D boundary layer equation."
+    "question": "At the point of separation, what condition is met at the wall?",
+    "options": ["u=0 and ∂u/∂y>0", "∂u/∂y=0 and τw=0", "τw=maximum", "v=0 but ∂u/∂x=0"],
+    "correctAnswer": "∂u/∂y=0 and τw=0",
+    "explanation": "Zero wall shear stress implies no velocity gradient at the wall, indicating separation."
   },
   {
-    "question": "What boundary conditions are used in the Blasius problem?",
-    "options": [
-      "f(0)=0, f′(0)=0, f′(∞)=1",
-      "f(0)=1, f′(0)=0, f′(∞)=0",
-      "f(0)=0, f′(0)=1, f′(∞)=0",
-      "f(0)=1, f′(0)=1, f′(∞)=1"
-    ],
-    "correctAnswer": "f(0)=0, f′(0)=0, f′(∞)=1",
-    "explanation": "No-slip and far-field boundary conditions: u=0 at wall and u→U∞ far from wall."
+    "question": "In boundary layer theory, which term dominates momentum transport normal to the wall?",
+    "options": ["Convective term", "Viscous diffusion term", "Pressure gradient term", "Coriolis term"],
+    "correctAnswer": "Viscous diffusion term",
+    "explanation": "Normal to the wall, viscous diffusion dominates because gradients in y are steep."
   },
   {
-    "question": "In the Blasius solution, how does δ scale with Reynolds number?",
-    "options": [
-      "δ ~ x Re_x^(-1/2)",
-      "δ ~ x Re_x^(1/2)",
-      "δ ~ Re_x^(-1)",
-      "δ ~ constant"
-    ],
-    "correctAnswer": "δ ~ x Re_x^(-1/2)",
-    "explanation": "The laminar flat-plate boundary layer thickness grows with x and inversely with √Re_x."
+    "question": "What happens to displacement and momentum thicknesses after flow separation?",
+    "options": ["They remain constant", "They decrease", "They increase sharply", "They vanish"],
+    "correctAnswer": "They increase sharply",
+    "explanation": "After separation, reversed flow and increased wake thickness enlarge δ* and θ."
   },
   {
-    "question": "What is the Falkner–Skan parameter n associated with?",
-    "options": [
-      "Velocity gradient at wall",
-      "Pressure gradient in the outer flow",
-      "Reynolds number",
-      "Shear stress distribution"
-    ],
-    "correctAnswer": "Pressure gradient in the outer flow",
-    "explanation": "U_e(x) = a x^n defines the outer velocity distribution and pressure gradient."
+    "question": "Which flow type has fuller velocity profiles and lower shape factors?",
+    "options": ["Laminar boundary layer", "Turbulent boundary layer", "Separated flow", "Creeping flow"],
+    "correctAnswer": "Turbulent boundary layer",
+    "explanation": "Turbulent mixing leads to higher momentum near the wall and smaller H."
   },
   {
-    "question": "What happens for n > 0 in Falkner–Skan flows?",
-    "options": [
-      "Adverse pressure gradient",
-      "Favorable pressure gradient",
-      "Flow separation",
-      "Constant pressure"
-    ],
-    "correctAnswer": "Favorable pressure gradient",
-    "explanation": "For n>0, dp/dx < 0, corresponding to accelerating flow and thinner boundary layers."
+    "question": "In a 2D free shear layer, which equation still holds from boundary layer theory?",
+    "options": ["Full Navier–Stokes equations", "Boundary layer approximations", "Bernoulli’s equation", "Potential flow equation"],
+    "correctAnswer": "Boundary layer approximations",
+    "explanation": "For high Re, the same thin-layer assumptions apply to shear layers as to boundary layers."
   },
   {
-    "question": "What happens for n < 0 in Falkner–Skan flows?",
-    "options": [
-      "Favorable pressure gradient",
-      "Adverse pressure gradient",
-      "Flow towards a sink",
-      "Uniform velocity profile"
-    ],
-    "correctAnswer": "Adverse pressure gradient",
-    "explanation": "For n<0, dp/dx > 0, decelerating flow that can cause separation."
+    "question": "Why is momentum conserved in a 2D laminar jet but not mass?",
+    "options": ["Mass is created by entrainment", "Momentum flux is constant while mass increases due to entrainment", "Viscosity destroys mass conservation", "Density varies"],
+    "correctAnswer": "Momentum flux is constant while mass increases due to entrainment",
+    "explanation": "Surrounding fluid is entrained, increasing total flow rate though momentum stays constant."
   },
   {
-    "question": "What is the simplified similarity variable used in the Falkner–Skan transformation?",
-    "options": [
-      "η = y √(U/νx)",
-      "η = y (U_e/νx)^(1/2)",
-      "η = y (x/U_e)^2",
-      "η = y Re_x"
-    ],
-    "correctAnswer": "η = y (U_e/νx)^(1/2)",
-    "explanation": "Similarity variable scales with √(Re_x) for similarity in the velocity profile."
+    "question": "In a free turbulent jet, what happens to the potential core with increasing x?",
+    "options": ["It expands indefinitely", "It remains constant", "It shortens and eventually disappears", "It oscillates"],
+    "correctAnswer": "It shortens and eventually disappears",
+    "explanation": "Further downstream the jet becomes self-similar, losing its potential core."
   },
   {
-    "question": "What indicates the onset of boundary layer separation in the Falkner–Skan model?",
-    "options": [
-      "Wall shear stress τw = 0",
-      "dp/dx < 0",
-      "f′(0) = 1",
-      "H < 2"
-    ],
-    "correctAnswer": "Wall shear stress τw = 0",
-    "explanation": "Separation occurs when τw = 0, or equivalently when f″(0)=0."
+    "question": "What type of similarity solution applies to laminar jets and wakes?",
+    "options": ["Stokes similarity", "Falkner–Skan similarity", "Prandtl–Meyer expansion", "Oseen approximation"],
+    "correctAnswer": "Falkner–Skan similarity",
+    "explanation": "Developed laminar jets and wakes satisfy equations similar to the Falkner–Skan family."
   },
   {
-    "question": "Why are boundary layer approximations invalid at separation?",
-    "options": [
-      "Because ∂p/∂y becomes significant",
-      "Because viscosity vanishes",
-      "Because Reynolds number becomes low",
-      "Because flow remains laminar"
-    ],
-    "correctAnswer": "Because ∂p/∂y becomes significant",
-    "explanation": "When flow reverses near the wall, pressure varies across the layer, violating assumptions."
+    "question": "Which of the following indicates boundary layer transition onset?",
+    "options": ["Shape factor H decreases below 1.5", "H increases above 4", "Wall shear stress becomes zero", "Reθ reaches a critical value (~300–400)"],
+    "correctAnswer": "Reθ reaches a critical value (~300–400)",
+    "explanation": "Transition often begins when the momentum-thickness Reynolds number exceeds about 300."
+  },
+  {
+    "question": "Why are integral methods like Thwaites’ used in boundary layer analysis?",
+    "options": ["They provide exact solutions", "They simplify the equations while preserving essential physics", "They ignore shear stress", "They work only for turbulent flows"],
+    "correctAnswer": "They simplify the equations while preserving essential physics",
+    "explanation": "Integral methods trade local accuracy for simple, global estimates of wall shear and separation."
   }
 ]
