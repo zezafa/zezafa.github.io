@@ -1,158 +1,277 @@
 [
   {
-    "question": "What is the main goal of linear stability analysis?",
-    "options": ["Determine nonlinear turbulence structures", "Predict the initial growth of small disturbances", "Compute viscous dissipation", "Analyze steady laminar flow patterns"],
-    "correctAnswer": "Predict the initial growth of small disturbances",
-    "explanation": "Linear stability analysis examines how small perturbations evolve around a basic flow state."
+    "question": "Which equation governs the stability of nearly parallel viscous flows?",
+    "options": [
+      "Navier–Stokes",
+      "Orr–Sommerfeld",
+      "Euler",
+      "Bernoulli"
+    ],
+    "correctAnswer": "Orr–Sommerfeld",
+    "explanation": "The Orr–Sommerfeld equation is a fourth‑order ODE derived from the linearized Navier–Stokes equations for parallel base flows."
   },
   {
-    "question": "What is assumed about the disturbance magnitude in linear stability analysis?",
-    "options": ["Disturbances are large compared to base flow", "Disturbances are negligible and ignored", "Disturbances are small and linear terms dominate", "Disturbances oscillate non-periodically"],
-    "correctAnswer": "Disturbances are small and linear terms dominate",
-    "explanation": "Linearization requires that u' << U so that nonlinear terms (u'^2, u'^3) can be neglected."
+    "question": "A necessary condition for inviscid instability of a parallel flow is that its velocity profile U(y) has:",
+    "options": [
+      "a maximum vorticity at the wall",
+      "a point of inflection",
+      "zero shear stress",
+      "constant gradient"
+    ],
+    "correctAnswer": "a point of inflection",
+    "explanation": "Rayleigh’s inflection‑point criterion states that a basic velocity profile must have d²U/dy² = 0 somewhere for inviscid instability to be possible."
   },
   {
-    "question": "Which type of instability occurs when two fluids of different velocities are in contact?",
-    "options": ["Rayleigh–Taylor instability", "Kelvin–Helmholtz instability", "Taylor–Couette instability", "Bénard convection"],
-    "correctAnswer": "Kelvin–Helmholtz instability",
-    "explanation": "It arises from velocity shear between fluid layers, leading to rolling wave-like disturbances."
+    "question": "Fjortoft’s theorem strengthens Rayleigh’s condition by requiring:",
+    "options": [
+      "the flow to be compressible",
+      "a positive pressure gradient",
+      "maximum vorticity inside the domain, not at the boundary",
+      "zero mean velocity"
+    ],
+    "correctAnswer": "maximum vorticity inside the domain, not at the boundary",
+    "explanation": "Fjortoft’s criterion demands that the magnitude of the base flow vorticity attain a maximum somewhere in the interior of the fluid."
   },
   {
-    "question": "What are the three steps of the method of normal modes?",
-    "options": ["Add perturbation, linearize, assume wave-like solution", "Solve Navier–Stokes directly, integrate, visualize", "Apply Bernoulli, assume incompressibility, integrate", "Use finite elements, discretize, iterate"],
-    "correctAnswer": "Add perturbation, linearize, assume wave-like solution",
-    "explanation": "These steps transform the stability problem into an eigenvalue problem."
+    "question": "Which type of waves appear first in laminar‑to‑turbulent transition over a flat plate?",
+    "options": [
+      "Kelvin–Helmholtz",
+      "Taylor–Couette",
+      "Tollmien–Schlichting",
+      "Rayleigh–Bénard"
+    ],
+    "correctAnswer": "Tollmien–Schlichting",
+    "explanation": "Two‑dimensional Tollmien–Schlichting (TS) waves are the first unstable modes in a boundary layer transition scenario."
   },
   {
-    "question": "What does a positive imaginary part of the wave speed c indicate?",
-    "options": ["Stable flow", "Oscillatory but stable flow", "Growing disturbance and instability", "Steady-state behavior"],
-    "correctAnswer": "Growing disturbance and instability",
-    "explanation": "Im(c) > 0 implies exponential growth of the perturbation amplitude."
+    "question": "In a Taylor–Couette experiment with inner radius R1 = 0.04 m, outer radius R2 = 0.0455 m, and inner cylinder angular speed Ω₁ = 100 rad/s (outer stationary), the Taylor number is:",
+    "options": [
+      "≈ 4 × 10⁴",
+      "≈ 1 × 10⁶",
+      "≈ 7 × 10²",
+      "≈ 2 × 10³"
+    ],
+    "correctAnswer": "≈ 4 × 10⁴",
+    "explanation": "Taylor number Ta = (Ω₁R₁)² d³ / ν², with d=R₂−R₁ ≈ 0.0055 m and ν≈1×10⁻⁶ m²/s gives Ta ≈ 4×10⁴."
   },
   {
-    "question": "In the Kelvin–Helmholtz instability, what physical mechanism provides energy to disturbances?",
-    "options": ["Viscosity", "Density gradient", "Velocity shear", "Surface tension"],
-    "correctAnswer": "Velocity shear",
-    "explanation": "Shear flow transfers kinetic energy from the mean flow to disturbances."
+    "question": "Which regime in Taylor–Couette flow is characterized by axisymmetric toroidal vortices?",
+    "options": [
+      "Taylor vortex",
+      "Wavy vortex",
+      "Spiral vortex",
+      "Turbulent"
+    ],
+    "correctAnswer": "Taylor vortex",
+    "explanation": "The first instability beyond the critical Taylor number produces steady, axisymmetric Taylor vortices."
   },
   {
-    "question": "What type of instability is associated with buoyancy forces acting against gravity?",
-    "options": ["Kelvin–Helmholtz", "Rayleigh–Taylor", "Taylor–Couette", "Görtler"],
-    "correctAnswer": "Rayleigh–Taylor",
-    "explanation": "It occurs when a heavy fluid lies above a lighter fluid in a gravitational field."
+    "question": "A boundary layer with a favorable pressure gradient is:",
+    "options": [
+      "more unstable to TS waves",
+      "stable and suppresses disturbances",
+      "unchanged in stability characteristics",
+      "always turbulent"
+    ],
+    "correctAnswer": "stable and suppresses disturbances",
+    "explanation": "A favorable (decreasing) pressure gradient thickens the boundary layer and dampens TS wave growth."
   },
   {
-    "question": "What experimental setup demonstrates centrifugal instability?",
-    "options": ["Heated plate convection cell", "Parallel shear flow", "Taylor–Couette flow", "Free jet"],
-    "correctAnswer": "Taylor–Couette flow",
-    "explanation": "Fluid between two rotating cylinders develops axisymmetric vortices beyond a critical rotation speed."
+    "question": "In the Orr–Sommerfeld equation, the term Re⁻¹ appears multiplying which differential operator?",
+    "options": [
+      "∂/∂x",
+      "∇²",
+      "d⁴/dy⁴",
+      "U(y)"
+    ],
+    "correctAnswer": "d⁴/dy⁴",
+    "explanation": "Viscous effects appear as (1/Re) times the fourth derivative of the disturbance streamfunction."
   },
   {
-    "question": "What is the effect of viscosity on flow stability?",
-    "options": ["Always destabilizing", "Always stabilizing", "Can be stabilizing or destabilizing depending on flow", "No effect"],
-    "correctAnswer": "Can be stabilizing or destabilizing depending on flow",
-    "explanation": "Viscosity often damps disturbances but can destabilize some rotating flows."
+    "question": "Which of the following best describes the ‘thumb’ region in a temporal instability diagram?",
+    "options": [
+      "Range where disturbances are damped",
+      "Range of neutral stability curves",
+      "Region where disturbances grow in time and space",
+      "Area where the flow is fully turbulent"
+    ],
+    "correctAnswer": "Region where disturbances grow in time and space",
+    "explanation": "The ‘thumb’ region indicates values of phase speed for which both temporal (growth) and spatial (decay/growth) rates are positive."
   },
   {
-    "question": "What is the physical meaning of the Orr–Sommerfeld equation?",
-    "options": ["It describes the evolution of pressure perturbations", "It governs linear disturbances in viscous parallel flows", "It is the inviscid limit of Navier–Stokes equations", "It models nonlinear turbulence"],
-    "correctAnswer": "It governs linear disturbances in viscous parallel flows",
-    "explanation": "The Orr–Sommerfeld equation results from linearizing the Navier–Stokes equations for parallel viscous flow."
+    "question": "Which equation is used to calculate the velocity profile in a Blasius boundary layer?",
+    "options": [
+      "Navier–Stokes",
+      "Prandtl’s similarity equations",
+      "Euler’s equations",
+      "Bernoulli’s principle"
+    ],
+    "correctAnswer": "Prandtl’s similarity equations",
+    "explanation": "The Blasius solution arises from solving Prandtl’s boundary‑layer similarity ODE."
   },
   {
-    "question": "What does Squire’s theorem state?",
-    "options": ["Three-dimensional disturbances grow faster than two-dimensional", "Two-dimensional disturbances are the least stable in viscous flows", "Viscosity stabilizes all modes", "Vorticity is conserved in inviscid flow"],
-    "correctAnswer": "Two-dimensional disturbances are the least stable in viscous flows",
-    "explanation": "Squire’s theorem allows reducing 3D stability problems to equivalent 2D ones."
+    "question": "A non-dimensional parameter that measures the relative importance of centrifugal forces to viscous stresses in a rotating flow is:",
+    "options": [
+      "Reynolds number",
+      "Froude number",
+      "Taylor number",
+      "Mach number"
+    ],
+    "correctAnswer": "Taylor number",
+    "explanation": "The Taylor number quantifies centrifugal instability in Taylor–Couette flows."
   },
   {
-    "question": "In the Taylor–Couette experiment, what condition promotes instability?",
-    "options": ["High outer cylinder speed and stationary inner cylinder", "Low Reynolds number", "Strong inward angular momentum gradient", "Constant angular velocity profile"],
-    "correctAnswer": "Strong inward angular momentum gradient",
-    "explanation": "When angular momentum decreases with radius, centrifugal forces amplify perturbations."
+    "question": "Which of the following is NOT a typical stage in laminar‑to‑turbulent transition over a flat plate?",
+    "options": [
+      "Development of three‑dimensional unstable waves",
+      "Vortex breakdown at high shear regions",
+      "Formation of turbulence spots",
+      "Immediate fully turbulent flow after TS wave onset"
+    ],
+    "correctAnswer": "Immediate fully turbulent flow after TS wave onset",
+    "explanation": "After TS waves, the flow undergoes several intermediate stages before becoming fully turbulent."
   },
   {
-    "question": "What parameter characterizes the onset of convection in the Bénard problem?",
-    "options": ["Reynolds number", "Prandtl number", "Rayleigh number", "Strouhal number"],
-    "correctAnswer": "Rayleigh number",
-    "explanation": "Rayleigh number measures buoyancy-driven convection relative to viscous damping."
+    "question": "The critical Reynolds number for onset of Tollmien–Schlichting waves in a Blasius boundary layer is approximately:",
+    "options": [
+      "Reₓ ≈ 500",
+      "Reₓ ≈ 5 000",
+      "Reₓ ≈ 50 000",
+      "Reₓ ≈ 500 000"
+    ],
+    "correctAnswer": "Reₓ ≈ 50 000",
+    "explanation": "TS waves typically appear when the local Reynolds number based on distance from leading edge reaches ~5×10⁴."
   },
   {
-    "question": "What are Tollmien–Schlichting (T–S) waves?",
-    "options": ["Nonlinear vortices in jets", "3D turbulent eddies", "2D viscous instability waves in boundary layers", "Acoustic standing waves"],
-    "correctAnswer": "2D viscous instability waves in boundary layers",
-    "explanation": "T–S waves are small amplitude oscillations that can trigger laminar–turbulent transition."
+    "question": "Which instability mechanism involves an inner cylinder rotating faster than an outer stationary cylinder?",
+    "options": [
+      "Kelvin–Helmholtz",
+      "Rayleigh‑Taylor",
+      "Centrifugal (Taylor) instability",
+      "Bénard–von Kármán"
+    ],
+    "correctAnswer": "Centrifugal (Taylor) instability",
+    "explanation": "The centrifugal or Taylor instability arises in rotating flows such as the Taylor–Couette system."
   },
   {
-    "question": "At what approximate Reynolds number does laminar flow in a flat plate boundary layer begin to transition?",
-    "options": ["Re_x ≈ 500", "Re_x ≈ 10⁴", "Re_x ≈ 5×10⁵", "Re_x ≈ 10⁷"],
-    "correctAnswer": "Re_x ≈ 5×10⁵",
-    "explanation": "Transition in a Blasius boundary layer typically begins around Re_x ≈ 5×10⁵–10⁶."
+    "question": "In a normal‑mode analysis, disturbances are assumed to have the form:",
+    "options": [
+      "A polynomial in time",
+      "A sinusoid in space only",
+      "An exponential of i(kx−ωt)",
+      "A constant amplitude"
+    ],
+    "correctAnswer": "An exponential of i(kx−ωt)",
+    "explanation": "Normal modes are expressed as exp[i(kx − ωt)] to separate spatial and temporal dependence."
   },
   {
-    "question": "In the flat-plate experiment, how was the wavelength of T–S waves determined?",
-    "options": ["From flow visualization", "From phase difference of signals at two streamwise points", "By hot-wire amplitude ratio", "By pressure measurements"],
-    "correctAnswer": "From phase difference of signals at two streamwise points",
-    "explanation": "A 360° phase shift between two measurement points gives the wavelength λ = Δx."
+    "question": "Which parameter appears explicitly in the Orr–Sommerfeld equation to represent viscous diffusion?",
+    "options": [
+      "Reynolds number",
+      "Mach number",
+      "Strouhal number",
+      "Froude number"
+    ],
+    "correctAnswer": "Reynolds number",
+    "explanation": "Viscous effects are scaled by 1/Re in the Orr–Sommerfeld equation."
   },
   {
-    "question": "How is the convection speed of T–S waves estimated?",
-    "options": ["From the ratio of wavelength to period", "From static pressure gradient", "By hot-wire calibration", "Using Reynolds stress tensor"],
-    "correctAnswer": "From the ratio of wavelength to period",
-    "explanation": "Wave speed c = λ / T where λ is wavelength and T is oscillation period."
+    "question": "A flow with a positive pressure gradient is considered:",
+    "options": [
+      "Favorable",
+      "Adverse",
+      "Neutral",
+      "Zero"
+    ],
+    "correctAnswer": "Adverse",
+    "explanation": "An adverse pressure gradient (pressure increasing in the flow direction) tends to destabilise boundary layers."
   },
   {
-    "question": "Which assumption is necessary for deriving the Orr–Sommerfeld equation?",
-    "options": ["Compressibility effects included", "Parallel base flow", "Nonlinear disturbances", "Rotating frame of reference"],
-    "correctAnswer": "Parallel base flow",
-    "explanation": "The base flow U(y) must depend on one spatial coordinate for the derivation to hold."
+    "question": "Which of the following best describes a Taylor–Couette regime with spiral vortices?",
+    "options": [
+      "Axisymmetric toroidal cells only",
+      "Wavy, non‑axisymmetric vortices forming a helix",
+      "Fully turbulent mixing",
+      "Laminar Couette flow"
+    ],
+    "correctAnswer": "Wavy, non‑axisymmetric vortices forming a helix",
+    "explanation": "Spiral vortex regimes arise when the Taylor number exceeds that for simple Taylor vortices and the disturbances become helical."
   },
   {
-    "question": "What distinguishes a neutrally stable flow?",
-    "options": ["Disturbances grow exponentially", "Disturbances decay exponentially", "Disturbances neither grow nor decay", "The flow is turbulent"],
-    "correctAnswer": "Disturbances neither grow nor decay",
-    "explanation": "For neutral stability, the growth rate is zero and perturbations persist with constant amplitude."
+    "question": "The phase speed c of a Tollmien–Schlichting wave is typically:",
+    "options": [
+      "less than the free‑stream velocity",
+      "equal to the free‑stream velocity",
+      "greater than the free‑stream velocity",
+      "zero"
+    ],
+    "correctAnswer": "less than the free‑stream velocity",
+    "explanation": "TS waves travel at a speed slightly below the outer flow, enabling them to be amplified by the boundary layer."
   },
   {
-    "question": "Which phenomenon can trigger transition to turbulence after linear instability?",
-    "options": ["Deterministic chaos", "Shock formation", "Compressibility", "Elastic rebound"],
-    "correctAnswer": "Deterministic chaos",
-    "explanation": "Nonlinear interactions of growing disturbances can lead to chaotic motion and turbulence."
+    "question": "Which quantity is used to non‑dimensionalise the radial gap in Taylor–Couette flow?",
+    "options": [
+      "Reynolds number",
+      "Gap ratio η = R₁/R₂",
+      "Taylor number",
+      "Aspect ratio"
+    ],
+    "correctAnswer": "Gap ratio η = R₁/R₂",
+    "explanation": "The gap ratio characterises the geometry of the annulus and influences stability limits."
   },
   {
-    "question": "What is the basic variable form assumed in the normal mode method?",
-    "options": ["u'(x,y,z,t) = A sin(kx)", "u'(x,y,z,t) = f(x,y) + t", "u'(x,y,z,t) = φ(y)e^{i(αx−ωt)}", "u'(x,y,z,t) = constant"],
-    "correctAnswer": "u'(x,y,z,t) = φ(y)e^{i(αx−ωt)}",
-    "explanation": "A harmonic wave form separates spatial and temporal dependencies for eigenvalue analysis."
+    "question": "A disturbance that grows in time but decays downstream is called:",
+    "options": [
+      "Convective instability",
+      "Absolute instability",
+      "Neutral mode",
+      "Stable"
+    ],
+    "correctAnswer": "Convective instability",
+    "explanation": "In convective instability, perturbations amplify temporally while being advected away spatially."
   },
   {
-    "question": "What is the physical significance of an eigenvalue’s imaginary part in stability analysis?",
-    "options": ["Determines wave speed", "Determines growth or decay rate of disturbance", "Determines flow temperature", "Determines density change"],
-    "correctAnswer": "Determines growth or decay rate of disturbance",
-    "explanation": "If Im(ω) > 0, the disturbance amplitude increases with time, indicating instability."
+    "question": "The Navier–Stokes equation for incompressible flow includes a term:",
+    "options": [
+      "∇p/ρ",
+      "u·∇u",
+      "ν∇²u",
+      "All of the above"
+    ],
+    "correctAnswer": "All of the above",
+    "explanation": "The full incompressible Navier–Stokes equation contains pressure gradient, convective acceleration, and viscous diffusion."
   },
   {
-    "question": "In inviscid parallel flow, instability can occur if what condition holds?",
-    "options": ["dU/dy = 0 everywhere", "The velocity profile has an inflection point", "Re is small", "Density is uniform"],
-    "correctAnswer": "The velocity profile has an inflection point",
-    "explanation": "Rayleigh’s inflection point theorem gives a necessary condition for inviscid instability."
+    "question": "In a boundary‑layer transition experiment at Reₓ = 20 000, which of the following is most likely observed?",
+    "options": [
+      "Fully turbulent flow",
+      "Laminar flow only",
+      "Two‑dimensional Tollmien–Schlichting waves",
+      "Three‑dimensional hairpin vortices"
+    ],
+    "correctAnswer": "Laminar flow only",
+    "explanation": "At Reₓ ≈ 20 000 the boundary layer remains laminar; TS waves typically appear near Reₓ ≈ 50 000."
   },
   {
-    "question": "What are Görtler vortices associated with?",
-    "options": ["Adverse pressure gradient in curved boundary layers", "High Mach number flow", "Inviscid instability", "Heat transfer in flat plates"],
-    "correctAnswer": "Adverse pressure gradient in curved boundary layers",
-    "explanation": "Görtler vortices appear in concave wall boundary layers due to centrifugal instability."
+    "question": "The stability of a shear layer with velocity U(y) = U₀ tanh(y/L) is primarily determined by:",
+    "options": [
+      "Reynolds number only",
+      "Presence of an inflection point in U(y)",
+      "Boundary conditions at y = ±∞",
+      "Temperature gradient"
+    ],
+    "correctAnswer": "Presence of an inflection point in U(y)",
+    "explanation": "The tanh profile has a point of inflection, making it susceptible to inviscid instability according to Rayleigh’s criterion."
   },
   {
-    "question": "Which instability mechanism dominates in a rotating cylinder system at low Re?",
-    "options": ["Viscous diffusion", "Taylor vortex formation", "Acoustic resonance", "Rayleigh–Bénard convection"],
-    "correctAnswer": "Taylor vortex formation",
-    "explanation": "At critical Re, axisymmetric Taylor vortices develop between rotating cylinders."
-  },
-  {
-    "question": "Which statement best summarizes the limitation of linear stability theory?",
-    "options": ["It cannot predict initial instability", "It neglects viscosity completely", "It cannot describe nonlinear saturation and turbulence", "It is only valid for inviscid flows"],
-    "correctAnswer": "It cannot describe nonlinear saturation and turbulence",
-    "explanation": "Linear theory predicts onset of instability but fails to capture subsequent nonlinear evolution."
+    "question": "Which statement best describes the role of viscosity in parallel‑flow stability?",
+    "options": [
+      "Viscosity always stabilises all disturbances",
+      "Viscosity can both stabilise and destabilise depending on wavenumber",
+      "Viscosity has no effect on stability",
+      "Viscosity only matters at very high Reynolds numbers"
+    ],
+    "correctAnswer": "Viscosity can both stabilise and destabilise depending on wavenumber",
+    "explanation": "Viscous terms in the Orr–Sommerfeld equation may damp short‑wave disturbances but can also promote long‑wave instabilities."
   }
 ]
