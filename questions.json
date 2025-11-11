@@ -1,122 +1,158 @@
 [
   {
-    "question": "What defines the boundary layer thickness δ?",
-    "options": ["Where velocity reaches 95% of U∞", "Where velocity reaches 99% of U∞", "Where shear stress becomes zero", "Where vorticity vanishes"],
-    "correctAnswer": "Where velocity reaches 99% of U∞",
-    "explanation": "Boundary layer thickness δ is the distance from the wall where velocity reaches approximately 99% of the free-stream value."
+    "question": "What is the main goal of linear stability analysis?",
+    "options": ["Determine nonlinear turbulence structures", "Predict the initial growth of small disturbances", "Compute viscous dissipation", "Analyze steady laminar flow patterns"],
+    "correctAnswer": "Predict the initial growth of small disturbances",
+    "explanation": "Linear stability analysis examines how small perturbations evolve around a basic flow state."
   },
   {
-    "question": "What is the displacement thickness δ* physically representing?",
-    "options": ["Loss of mass due to viscosity", "Momentum deficit", "Displacement of the inviscid streamline due to boundary layer growth", "Pressure variation along the wall"],
-    "correctAnswer": "Displacement of the inviscid streamline due to boundary layer growth",
-    "explanation": "δ* represents the amount by which the outer potential flow is displaced due to the boundary layer."
+    "question": "What is assumed about the disturbance magnitude in linear stability analysis?",
+    "options": ["Disturbances are large compared to base flow", "Disturbances are negligible and ignored", "Disturbances are small and linear terms dominate", "Disturbances oscillate non-periodically"],
+    "correctAnswer": "Disturbances are small and linear terms dominate",
+    "explanation": "Linearization requires that u' << U so that nonlinear terms (u'^2, u'^3) can be neglected."
   },
   {
-    "question": "Which of the following best describes the momentum thickness θ?",
-    "options": ["It measures wall shear stress directly", "It quantifies loss of kinetic energy", "It measures the reduction in momentum flux due to viscous effects", "It represents the total viscous dissipation"],
-    "correctAnswer": "It measures the reduction in momentum flux due to viscous effects",
-    "explanation": "θ indicates how much momentum is lost in the boundary layer relative to the inviscid case."
+    "question": "Which type of instability occurs when two fluids of different velocities are in contact?",
+    "options": ["Rayleigh–Taylor instability", "Kelvin–Helmholtz instability", "Taylor–Couette instability", "Bénard convection"],
+    "correctAnswer": "Kelvin–Helmholtz instability",
+    "explanation": "It arises from velocity shear between fluid layers, leading to rolling wave-like disturbances."
   },
   {
-    "question": "What is the typical range of the shape factor H for laminar boundary layers?",
-    "options": ["1.3–2.5", "2.0–4.0", "4.0–6.0", "0.5–1.0"],
-    "correctAnswer": "2.0–4.0",
-    "explanation": "For laminar flow, H = δ*/θ typically ranges from 2.0 to 4.0."
+    "question": "What are the three steps of the method of normal modes?",
+    "options": ["Add perturbation, linearize, assume wave-like solution", "Solve Navier–Stokes directly, integrate, visualize", "Apply Bernoulli, assume incompressibility, integrate", "Use finite elements, discretize, iterate"],
+    "correctAnswer": "Add perturbation, linearize, assume wave-like solution",
+    "explanation": "These steps transform the stability problem into an eigenvalue problem."
   },
   {
-    "question": "What is the typical range of the shape factor H for turbulent boundary layers?",
-    "options": ["2.0–4.0", "1.3–2.5", "4.0–6.0", "0.5–1.0"],
-    "correctAnswer": "1.3–2.5",
-    "explanation": "For turbulent flow, the shape factor is smaller, indicating a fuller velocity profile."
+    "question": "What does a positive imaginary part of the wave speed c indicate?",
+    "options": ["Stable flow", "Oscillatory but stable flow", "Growing disturbance and instability", "Steady-state behavior"],
+    "correctAnswer": "Growing disturbance and instability",
+    "explanation": "Im(c) > 0 implies exponential growth of the perturbation amplitude."
   },
   {
-    "question": "What does the van Kármán integral relation primarily relate?",
-    "options": ["Pressure gradient, displacement thickness, and wall shear stress", "Vorticity, viscosity, and temperature gradient", "Stream function and vorticity", "Flow acceleration and energy dissipation"],
-    "correctAnswer": "Pressure gradient, displacement thickness, and wall shear stress",
-    "explanation": "It provides an integral relation linking wall shear stress and the rate of change of momentum thickness."
+    "question": "In the Kelvin–Helmholtz instability, what physical mechanism provides energy to disturbances?",
+    "options": ["Viscosity", "Density gradient", "Velocity shear", "Surface tension"],
+    "correctAnswer": "Velocity shear",
+    "explanation": "Shear flow transfers kinetic energy from the mean flow to disturbances."
   },
   {
-    "question": "Why are boundary layer equations simplified compared to full Navier–Stokes equations?",
-    "options": ["Because viscosity is neglected", "Because inertia terms are small", "Because ∂²u/∂y² ≫ ∂²u/∂x² and pressure is nearly constant across the layer", "Because density variations dominate"],
-    "correctAnswer": "Because ∂²u/∂y² ≫ ∂²u/∂x² and pressure is nearly constant across the layer",
-    "explanation": "These approximations lead to Prandtl’s boundary layer equations valid for high Reynolds numbers."
+    "question": "What type of instability is associated with buoyancy forces acting against gravity?",
+    "options": ["Kelvin–Helmholtz", "Rayleigh–Taylor", "Taylor–Couette", "Görtler"],
+    "correctAnswer": "Rayleigh–Taylor",
+    "explanation": "It occurs when a heavy fluid lies above a lighter fluid in a gravitational field."
   },
   {
-    "question": "What does the Thwaites method provide an estimate for?",
-    "options": ["Boundary layer thickness only", "Transition Reynolds number", "Wall shear stress and point of separation", "Vorticity distribution"],
-    "correctAnswer": "Wall shear stress and point of separation",
-    "explanation": "Thwaites’ method gives approximate values for wall shear and separation using an integral approach."
+    "question": "What experimental setup demonstrates centrifugal instability?",
+    "options": ["Heated plate convection cell", "Parallel shear flow", "Taylor–Couette flow", "Free jet"],
+    "correctAnswer": "Taylor–Couette flow",
+    "explanation": "Fluid between two rotating cylinders develops axisymmetric vortices beyond a critical rotation speed."
   },
   {
-    "question": "The Thwaites parameter λ involves which quantities?",
-    "options": ["Velocity gradient and kinematic viscosity", "Pressure and density", "Vorticity and shear rate", "Reynolds stress and velocity"],
-    "correctAnswer": "Velocity gradient and kinematic viscosity",
-    "explanation": "λ = θ² (dU/dx)/ν is used in Thwaites’ method to characterize the flow state."
+    "question": "What is the effect of viscosity on flow stability?",
+    "options": ["Always destabilizing", "Always stabilizing", "Can be stabilizing or destabilizing depending on flow", "No effect"],
+    "correctAnswer": "Can be stabilizing or destabilizing depending on flow",
+    "explanation": "Viscosity often damps disturbances but can destabilize some rotating flows."
   },
   {
-    "question": "In the Thwaites method, a negative λ indicates:",
-    "options": ["Acceleration of the boundary layer", "Deceleration and possible flow separation", "Constant pressure flow", "Turbulent transition"],
-    "correctAnswer": "Deceleration and possible flow separation",
-    "explanation": "Negative λ means adverse pressure gradient, possibly leading to separation."
+    "question": "What is the physical meaning of the Orr–Sommerfeld equation?",
+    "options": ["It describes the evolution of pressure perturbations", "It governs linear disturbances in viscous parallel flows", "It is the inviscid limit of Navier–Stokes equations", "It models nonlinear turbulence"],
+    "correctAnswer": "It governs linear disturbances in viscous parallel flows",
+    "explanation": "The Orr–Sommerfeld equation results from linearizing the Navier–Stokes equations for parallel viscous flow."
   },
   {
-    "question": "At the point of separation, what condition is met at the wall?",
-    "options": ["u=0 and ∂u/∂y>0", "∂u/∂y=0 and τw=0", "τw=maximum", "v=0 but ∂u/∂x=0"],
-    "correctAnswer": "∂u/∂y=0 and τw=0",
-    "explanation": "Zero wall shear stress implies no velocity gradient at the wall, indicating separation."
+    "question": "What does Squire’s theorem state?",
+    "options": ["Three-dimensional disturbances grow faster than two-dimensional", "Two-dimensional disturbances are the least stable in viscous flows", "Viscosity stabilizes all modes", "Vorticity is conserved in inviscid flow"],
+    "correctAnswer": "Two-dimensional disturbances are the least stable in viscous flows",
+    "explanation": "Squire’s theorem allows reducing 3D stability problems to equivalent 2D ones."
   },
   {
-    "question": "In boundary layer theory, which term dominates momentum transport normal to the wall?",
-    "options": ["Convective term", "Viscous diffusion term", "Pressure gradient term", "Coriolis term"],
-    "correctAnswer": "Viscous diffusion term",
-    "explanation": "Normal to the wall, viscous diffusion dominates because gradients in y are steep."
+    "question": "In the Taylor–Couette experiment, what condition promotes instability?",
+    "options": ["High outer cylinder speed and stationary inner cylinder", "Low Reynolds number", "Strong inward angular momentum gradient", "Constant angular velocity profile"],
+    "correctAnswer": "Strong inward angular momentum gradient",
+    "explanation": "When angular momentum decreases with radius, centrifugal forces amplify perturbations."
   },
   {
-    "question": "What happens to displacement and momentum thicknesses after flow separation?",
-    "options": ["They remain constant", "They decrease", "They increase sharply", "They vanish"],
-    "correctAnswer": "They increase sharply",
-    "explanation": "After separation, reversed flow and increased wake thickness enlarge δ* and θ."
+    "question": "What parameter characterizes the onset of convection in the Bénard problem?",
+    "options": ["Reynolds number", "Prandtl number", "Rayleigh number", "Strouhal number"],
+    "correctAnswer": "Rayleigh number",
+    "explanation": "Rayleigh number measures buoyancy-driven convection relative to viscous damping."
   },
   {
-    "question": "Which flow type has fuller velocity profiles and lower shape factors?",
-    "options": ["Laminar boundary layer", "Turbulent boundary layer", "Separated flow", "Creeping flow"],
-    "correctAnswer": "Turbulent boundary layer",
-    "explanation": "Turbulent mixing leads to higher momentum near the wall and smaller H."
+    "question": "What are Tollmien–Schlichting (T–S) waves?",
+    "options": ["Nonlinear vortices in jets", "3D turbulent eddies", "2D viscous instability waves in boundary layers", "Acoustic standing waves"],
+    "correctAnswer": "2D viscous instability waves in boundary layers",
+    "explanation": "T–S waves are small amplitude oscillations that can trigger laminar–turbulent transition."
   },
   {
-    "question": "In a 2D free shear layer, which equation still holds from boundary layer theory?",
-    "options": ["Full Navier–Stokes equations", "Boundary layer approximations", "Bernoulli’s equation", "Potential flow equation"],
-    "correctAnswer": "Boundary layer approximations",
-    "explanation": "For high Re, the same thin-layer assumptions apply to shear layers as to boundary layers."
+    "question": "At what approximate Reynolds number does laminar flow in a flat plate boundary layer begin to transition?",
+    "options": ["Re_x ≈ 500", "Re_x ≈ 10⁴", "Re_x ≈ 5×10⁵", "Re_x ≈ 10⁷"],
+    "correctAnswer": "Re_x ≈ 5×10⁵",
+    "explanation": "Transition in a Blasius boundary layer typically begins around Re_x ≈ 5×10⁵–10⁶."
   },
   {
-    "question": "Why is momentum conserved in a 2D laminar jet but not mass?",
-    "options": ["Mass is created by entrainment", "Momentum flux is constant while mass increases due to entrainment", "Viscosity destroys mass conservation", "Density varies"],
-    "correctAnswer": "Momentum flux is constant while mass increases due to entrainment",
-    "explanation": "Surrounding fluid is entrained, increasing total flow rate though momentum stays constant."
+    "question": "In the flat-plate experiment, how was the wavelength of T–S waves determined?",
+    "options": ["From flow visualization", "From phase difference of signals at two streamwise points", "By hot-wire amplitude ratio", "By pressure measurements"],
+    "correctAnswer": "From phase difference of signals at two streamwise points",
+    "explanation": "A 360° phase shift between two measurement points gives the wavelength λ = Δx."
   },
   {
-    "question": "In a free turbulent jet, what happens to the potential core with increasing x?",
-    "options": ["It expands indefinitely", "It remains constant", "It shortens and eventually disappears", "It oscillates"],
-    "correctAnswer": "It shortens and eventually disappears",
-    "explanation": "Further downstream the jet becomes self-similar, losing its potential core."
+    "question": "How is the convection speed of T–S waves estimated?",
+    "options": ["From the ratio of wavelength to period", "From static pressure gradient", "By hot-wire calibration", "Using Reynolds stress tensor"],
+    "correctAnswer": "From the ratio of wavelength to period",
+    "explanation": "Wave speed c = λ / T where λ is wavelength and T is oscillation period."
   },
   {
-    "question": "What type of similarity solution applies to laminar jets and wakes?",
-    "options": ["Stokes similarity", "Falkner–Skan similarity", "Prandtl–Meyer expansion", "Oseen approximation"],
-    "correctAnswer": "Falkner–Skan similarity",
-    "explanation": "Developed laminar jets and wakes satisfy equations similar to the Falkner–Skan family."
+    "question": "Which assumption is necessary for deriving the Orr–Sommerfeld equation?",
+    "options": ["Compressibility effects included", "Parallel base flow", "Nonlinear disturbances", "Rotating frame of reference"],
+    "correctAnswer": "Parallel base flow",
+    "explanation": "The base flow U(y) must depend on one spatial coordinate for the derivation to hold."
   },
   {
-    "question": "Which of the following indicates boundary layer transition onset?",
-    "options": ["Shape factor H decreases below 1.5", "H increases above 4", "Wall shear stress becomes zero", "Reθ reaches a critical value (~300–400)"],
-    "correctAnswer": "Reθ reaches a critical value (~300–400)",
-    "explanation": "Transition often begins when the momentum-thickness Reynolds number exceeds about 300."
+    "question": "What distinguishes a neutrally stable flow?",
+    "options": ["Disturbances grow exponentially", "Disturbances decay exponentially", "Disturbances neither grow nor decay", "The flow is turbulent"],
+    "correctAnswer": "Disturbances neither grow nor decay",
+    "explanation": "For neutral stability, the growth rate is zero and perturbations persist with constant amplitude."
   },
   {
-    "question": "Why are integral methods like Thwaites’ used in boundary layer analysis?",
-    "options": ["They provide exact solutions", "They simplify the equations while preserving essential physics", "They ignore shear stress", "They work only for turbulent flows"],
-    "correctAnswer": "They simplify the equations while preserving essential physics",
-    "explanation": "Integral methods trade local accuracy for simple, global estimates of wall shear and separation."
+    "question": "Which phenomenon can trigger transition to turbulence after linear instability?",
+    "options": ["Deterministic chaos", "Shock formation", "Compressibility", "Elastic rebound"],
+    "correctAnswer": "Deterministic chaos",
+    "explanation": "Nonlinear interactions of growing disturbances can lead to chaotic motion and turbulence."
+  },
+  {
+    "question": "What is the basic variable form assumed in the normal mode method?",
+    "options": ["u'(x,y,z,t) = A sin(kx)", "u'(x,y,z,t) = f(x,y) + t", "u'(x,y,z,t) = φ(y)e^{i(αx−ωt)}", "u'(x,y,z,t) = constant"],
+    "correctAnswer": "u'(x,y,z,t) = φ(y)e^{i(αx−ωt)}",
+    "explanation": "A harmonic wave form separates spatial and temporal dependencies for eigenvalue analysis."
+  },
+  {
+    "question": "What is the physical significance of an eigenvalue’s imaginary part in stability analysis?",
+    "options": ["Determines wave speed", "Determines growth or decay rate of disturbance", "Determines flow temperature", "Determines density change"],
+    "correctAnswer": "Determines growth or decay rate of disturbance",
+    "explanation": "If Im(ω) > 0, the disturbance amplitude increases with time, indicating instability."
+  },
+  {
+    "question": "In inviscid parallel flow, instability can occur if what condition holds?",
+    "options": ["dU/dy = 0 everywhere", "The velocity profile has an inflection point", "Re is small", "Density is uniform"],
+    "correctAnswer": "The velocity profile has an inflection point",
+    "explanation": "Rayleigh’s inflection point theorem gives a necessary condition for inviscid instability."
+  },
+  {
+    "question": "What are Görtler vortices associated with?",
+    "options": ["Adverse pressure gradient in curved boundary layers", "High Mach number flow", "Inviscid instability", "Heat transfer in flat plates"],
+    "correctAnswer": "Adverse pressure gradient in curved boundary layers",
+    "explanation": "Görtler vortices appear in concave wall boundary layers due to centrifugal instability."
+  },
+  {
+    "question": "Which instability mechanism dominates in a rotating cylinder system at low Re?",
+    "options": ["Viscous diffusion", "Taylor vortex formation", "Acoustic resonance", "Rayleigh–Bénard convection"],
+    "correctAnswer": "Taylor vortex formation",
+    "explanation": "At critical Re, axisymmetric Taylor vortices develop between rotating cylinders."
+  },
+  {
+    "question": "Which statement best summarizes the limitation of linear stability theory?",
+    "options": ["It cannot predict initial instability", "It neglects viscosity completely", "It cannot describe nonlinear saturation and turbulence", "It is only valid for inviscid flows"],
+    "correctAnswer": "It cannot describe nonlinear saturation and turbulence",
+    "explanation": "Linear theory predicts onset of instability but fails to capture subsequent nonlinear evolution."
   }
 ]
