@@ -1,244 +1,343 @@
 [
   {
-    "question": "What is the expression for the Reynolds number based on a characteristic length L and velocity U?",
+    "question": "What physical assumption defines creeping (Stokes) flow?",
     "options": [
-      "Re = ρUL/μ",
-      "Re = μUL/ρ",
-      "Re = UL/(ν)",
-      "Re = (U²L)/g"
+      "Re << 1, inertial terms negligible",
+      "Re >> 1, viscous terms negligible",
+      "Flow is inviscid everywhere",
+      "Pressure is constant everywhere"
     ],
-    "correctAnswer": "Re = ρUL/μ",
-    "explanation": "The Reynolds number is defined as the ratio of inertial to viscous forces: Re = (ρU L)/μ, where ν = μ/ρ."
+    "correctAnswer": "Re << 1, inertial terms negligible",
+    "explanation": "Creeping flow is dominated by viscosity because inertial terms vanish at very low Reynolds numbers. :contentReference[oaicite:0]{index=0}"
   },
   {
-    "question": "Which parameter in the Orr–Sommerfeld equation represents the wave’s spatial growth rate?",
+    "question": "For Stokes flow past a sphere, what is the drag force?",
     "options": [
-      "Real part of the complex frequency ω",
-      "Imaginary part of the complex wavenumber k",
-      "Phase speed c",
-      "Reynolds number Re"
+      "4πμUa",
+      "6πμUa",
+      "3πμUa",
+      "12πμUa"
     ],
-    "correctAnswer": "Imaginary part of the complex wavenumber k",
-    "explanation": "A positive Im(k) indicates exponential growth in the downstream direction (spatial instability)."
+    "correctAnswer": "6πμUa",
+    "explanation": "Stokes’ law gives F = 6πμUa for a solid sphere at low Reynolds number. :contentReference[oaicite:1]{index=1}"
   },
   {
-    "question": "In a Taylor–Couette experiment, increasing which quantity tends to trigger transition from steady vortices to wavy vortices?",
+    "question": "Why is vorticity in Stokes flow around a sphere only in the φ-direction?",
     "options": [
-      "Outer cylinder speed Ω₂",
-      "Inner cylinder radius R₁",
-      "Fluid viscosity μ",
-      "Gap width d"
+      "Because the flow is axisymmetric",
+      "Because the sphere rotates",
+      "Because viscosity is constant",
+      "Because the pressure is uniform"
     ],
-    "correctAnswer": "Outer cylinder speed Ω₂",
-    "explanation": "A non‑zero Ω₂ destabilises the axisymmetric Taylor vortices, leading to wavy or spiral vortex regimes."
+    "correctAnswer": "Because the flow is axisymmetric",
+    "explanation": "Axisymmetry reduces vorticity to a single azimuthal component. :contentReference[oaicite:2]{index=2}"
   },
   {
-    "question": "Which of the following is a key signature of absolute instability in a parallel flow?",
+    "question": "Which assumption allows similarity solutions for the impulsively started flat plate?",
     "options": [
-      "Disturbances grow while remaining fixed in space",
-      "Disturbances are swept downstream and decay",
-      "All disturbances are neutrally stable",
-      "The base flow becomes turbulent immediately"
+      "Parallel flow: u = u(y, t), v ≠ 0",
+      "Uniform temperature",
+      "Neglect of viscous diffusion",
+      "Non-Newtonian fluid behaviour"
     ],
-    "correctAnswer": "Disturbances grow while remaining fixed in space",
-    "explanation": "Absolute instability implies that perturbations amplify at a fixed location, unlike convective instability where they are advected away."
+    "correctAnswer": "Parallel flow: u = u(y, t), v ≠ 0",
+    "explanation": "The derivation uses a parallel flow assumption and diffusion in y-direction only. :contentReference[oaicite:3]{index=3}"
   },
   {
-    "question": "For a Blasius boundary layer, the dimensionless displacement thickness δ* is approximately:",
+    "question": "What similarity variable is used in the impulsively started flat-plate problem?",
     "options": [
-      "δ*/x ≈ 0.664 Reₓ⁻¹/²",
-      "δ*/x ≈ 1.72 Reₓ⁻¹/³",
-      "δ*/x ≈ 0.45 Reₓ⁻¹/²",
-      "δ*/x ≈ 2.00 Reₓ⁻¹/⁴"
+      "η = y / √(νt)",
+      "η = x / y",
+      "η = xyν",
+      "η = y²/x"
     ],
-    "correctAnswer": "δ*/x ≈ 0.664 Reₓ⁻¹/²",
-    "explanation": "The classic Blasius solution gives δ* ≈ 0.664 x Reₓ⁻¹/²."
+    "correctAnswer": "η = y / √(νt)",
+    "explanation": "The heat-kernel form motivates the similarity variable η = y / √(νt). :contentReference[oaicite:4]{index=4}"
   },
   {
-    "question": "Which of the following best describes a ‘hairpin’ eddy?",
+    "question": "In the Stokes solution past a fluid sphere, what happens to drag when μ_i << μ?",
     "options": [
-      "A two‑dimensional vortex ring",
-      "A three‑dimensional vortex tube resembling a hairpin shape",
-      "A steady laminar roll in a Couette flow",
-      "A purely inviscid instability mode"
+      "Drag becomes 6πμUa",
+      "Drag becomes 4πμUa",
+      "Drag becomes zero",
+      "Drag becomes 8πμUa"
     ],
-    "correctAnswer": "A three‑dimensional vortex tube resembling a hairpin shape",
-    "explanation": "Hairpins are characteristic 3D structures that appear during transition and contribute to turbulence production."
+    "correctAnswer": "Drag becomes 4πμUa",
+    "explanation": "For gas bubbles μ_i << μ, the drag reduces to 4πμUa. :contentReference[oaicite:5]{index=5}"
   },
   {
-    "question": "The Taylor number for a rotating annulus is defined as:",
+    "question": "What is the physical interpretation of displacement thickness δ*?",
     "options": [
-      "Ta = (Ω₁R₁)² d³ / ν²",
-      "Ta = Re² η⁴",
-      "Ta = (ΔP L)/μ",
-      "Ta = 2π R₁ Ω₁ / U∞"
+      "Thickness where velocity reaches 0.99U",
+      "Height by which streamline is displaced due to reduced mass flux",
+      "Distance needed for u/U = 0.5",
+      "Distance to the inviscid core"
     ],
-    "correctAnswer": "Ta = (Ω₁R₁)² d³ / ν²",
-    "explanation": "This nondimensional number compares centrifugal forces to viscous stresses in the annular gap."
+    "correctAnswer": "Height by which streamline is displaced due to reduced mass flux",
+    "explanation": "δ* accounts for the mass deficit caused by the slower boundary-layer fluid. :contentReference[oaicite:6]{index=6}"
   },
   {
-    "question": "Which of the following is NOT a direct consequence of the Rayleigh inflection‑point criterion?",
+    "question": "What is momentum thickness θ?",
     "options": [
-      "The base flow must have d²U/dy² = 0 somewhere",
-      "If no inflection point exists, inviscid instability cannot occur",
-      "Viscous effects can still destabilise flows without inflection points",
-      "It provides a necessary but not sufficient condition for instability"
+      "Integral measuring momentum deficit in a boundary layer",
+      "Integral of pressure across the boundary layer",
+      "Thickness of laminar sublayer",
+      "Thickness of turbulent core"
     ],
-    "correctAnswer": "If no inflection point exists, inviscid instability cannot occur",
-    "explanation": "Rayleigh’s criterion is only necessary; absence of an inflection point guarantees stability for inviscid flow."
+    "correctAnswer": "Integral measuring momentum deficit in a boundary layer",
+    "explanation": "θ measures the loss of momentum due to reduced velocity near the wall. :contentReference[oaicite:7]{index=7}"
   },
   {
-    "question": "Which parameter in a Taylor–Couette experiment controls the curvature of the annulus?",
+    "question": "What does the Blasius equation represent?",
     "options": [
-      "Gap ratio η = R₁/R₂",
-      "Reynolds number Re",
-      "Taylor number Ta",
-      "Aspect ratio L/d"
+      "Similarity equation for Stokes flow",
+      "Similarity equation for laminar flat-plate boundary layer",
+      "Equation for unsteady Couette flow",
+      "Equation for inviscid potential flow"
     ],
-    "correctAnswer": "Gap ratio η = R₁/R₂",
-    "explanation": "The gap ratio sets the curvature and influences the critical Taylor number for instability."
+    "correctAnswer": "Similarity equation for laminar flat-plate boundary layer",
+    "explanation": "Blasius derived the similarity ODE for zero-pressure-gradient flat-plate flow. :contentReference[oaicite:8]{index=8}"
   },
   {
-    "question": "During laminar‑to‑turbulent transition, ‘turbulent spots’ are formed by:",
+    "question": "What boundary condition is used for Blasius at η = 0?",
     "options": [
-      "Linear amplification of Tollmien–Schlichting waves",
-      "Nonlinear interaction between two-dimensional and three‑dimensional disturbances",
-      "Immediate breakdown of the boundary layer at Reₓ ≈ 10⁶",
-      "Viscous diffusion of shear layers"
+      "u = U",
+      "v = 0, u = 0",
+      "du/dy = 0",
+      "Pressure = constant"
     ],
-    "correctAnswer": "Nonlinear interaction between two-dimensional and three‑dimensional disturbances",
-    "explanation": "Spots arise when TS waves interact nonlinearly with secondary instabilities, creating localized turbulence."
+    "correctAnswer": "v = 0, u = 0",
+    "explanation": "No-slip and impermeability at the wall. :contentReference[oaicite:9]{index=9}"
   },
   {
-    "question": "In the normal‑mode ansatz φ(x,y,t) = ˆφ(y) e^{i(kx - ωt)}, what does the complex frequency ω represent?",
+    "question": "Which parameter controls pressure gradient in Falkner–Skan flows?",
     "options": [
-      "Phase speed of the wave",
-      "Temporal growth/decay rate",
-      "Spatial wavelength",
-      "Viscous damping coefficient"
+      "β",
+      "δ",
+      "θ",
+      "μ"
     ],
-    "correctAnswer": "Temporal growth/decay rate",
-    "explanation": "Im(ω) > 0 implies temporal amplification, while Re(ω)/k gives the phase speed."
+    "correctAnswer": "β",
+    "explanation": "β determines favourable, zero, or adverse pressure gradient regimes. :contentReference[oaicite:10]{index=10}"
   },
   {
-    "question": "Which of the following flows is guaranteed to be inviscidly stable according to Rayleigh’s criterion?",
+    "question": "What velocity distribution corresponds to Falkner–Skan flows?",
     "options": [
-      "Parabolic velocity profile U(y)=U₀(1−y²)",
-      "Hyperbolic tangent shear layer",
-      "Linear shear flow U(y) = Sy",
-      "Uniform plug flow"
+      "U_e(x) = constant",
+      "U_e(x) = ax^n",
+      "U_e(x) = a e^x",
+      "U_e(x) = √x"
     ],
-    "correctAnswer": "Uniform plug flow",
-    "explanation": "A plug flow has no inflection point and is therefore inviscidly stable."
+    "correctAnswer": "U_e(x) = ax^n",
+    "explanation": "The similarity exists when U_e follows a power law. :contentReference[oaicite:11]{index=11}"
   },
   {
-    "question": "The term 'neutral stability curve' in a TS wave diagram refers to:",
+    "question": "What happens to a boundary layer under adverse pressure gradient?",
     "options": [
-      "Values of Re where the flow becomes turbulent",
-      "Points where Im(ω) = 0 for given k",
-      "Critical wavenumbers beyond which disturbances grow",
-      "Regions where both temporal and spatial growth rates vanish"
+      "It always thins",
+      "It accelerates",
+      "It thickens and can separate",
+      "It becomes inviscid"
     ],
-    "correctAnswer": "Points where Im(ω) = 0 for given k",
-    "explanation": "On the neutral curve, the disturbance neither grows nor decays temporally."
+    "correctAnswer": "It thickens and can separate",
+    "explanation": "Adverse pressure gradients cause deceleration and may produce reversed flow. :contentReference[oaicite:12]{index=12}"
   },
   {
-    "question": "Which of the following best describes a ‘convective instability’?",
+    "question": "What type of equations are the boundary-layer equations?",
     "options": [
-      "Disturbances grow in place but are advected downstream",
-      "All disturbances decay regardless of location",
-      "Disturbances remain stationary and amplify indefinitely",
-      "Instability only occurs for very high Reynolds numbers"
+      "Elliptic",
+      "Parabolic",
+      "Hyperbolic",
+      "Algebraic"
     ],
-    "correctAnswer": "Disturbances grow in place but are advected downstream",
-    "explanation": "Convective instability implies that amplified perturbations are carried away from their source."
+    "correctAnswer": "Parabolic",
+    "explanation": "They can be marched downstream because they are parabolic in x. :contentReference[oaicite:13]{index=13}"
   },
   {
-    "question": "In a Taylor–Couette system, the critical Taylor number for onset of steady vortices (Taylor vortex) is approximately:",
+    "question": "Why is pressure approximately constant across a boundary layer?",
     "options": [
-      "Ta_c ≈ 3.5",
-      "Ta_c ≈ 20",
-      "Ta_c ≈ 1000",
-      "Ta_c ≈ 10⁶"
+      "High density variations",
+      "Negligible viscous stresses in x-direction",
+      "Small transverse velocity gradients",
+      "Hydrostatic balance dominates"
     ],
-    "correctAnswer": "Ta_c ≈ 3.5",
-    "explanation": "For a narrow gap (η → 1) the critical Ta for axisymmetric vortices is about 3.5."
+    "correctAnswer": "Small transverse velocity gradients",
+    "explanation": "Boundary-layer scaling shows ∂p/∂y ≈ 0, so p(x,y) ≈ p_e(x). :contentReference[oaicite:14]{index=14}"
   },
   {
-    "question": "Which of the following statements correctly relates the growth rate of a TS wave to its wavenumber?",
+    "question": "What characterizes Kelvin–Helmholtz instability?",
     "options": [
-      "Growth rate increases monotonically with k",
-      "There exists an optimal k that maximises the growth rate",
-      "Growth rate is independent of k",
-      "Higher k always stabilises the flow"
+      "Driven by centrifugal forces",
+      "Driven by shear between two parallel streams",
+      "Driven by buoyancy",
+      "Driven by viscosity"
     ],
-    "correctAnswer": "There exists an optimal k that maximises the growth rate",
-    "explanation": "TS waves exhibit a band of unstable wavenumbers; within this band, one k yields the largest Im(ω)."
+    "correctAnswer": "Driven by shear between two parallel streams",
+    "explanation": "KH instability is caused by velocity jump across an interface. :contentReference[oaicite:15]{index=15}"
   },
   {
-    "question": "The term 'favorable pressure gradient' has which effect on a boundary layer?",
+    "question": "Which method is used for linear stability analysis?",
     "options": [
-      "Thins the layer and stabilises it",
-      "Thickens the layer and destabilises it",
-      "Has no influence on stability",
-      "Always leads to turbulence"
+      "Method of asymptotic matching",
+      "Method of characteristics",
+      "Method of normal modes",
+      "Direct numerical simulation"
     ],
-    "correctAnswer": "Thins the layer and stabilises it",
-    "explanation": "A pressure gradient that decreases in the flow direction reduces shear and suppresses TS wave growth."
+    "correctAnswer": "Method of normal modes",
+    "explanation": "Perturbations are assumed as waves: u' ∼ exp(iαx − iωt). :contentReference[oaicite:16]{index=16}"
   },
   {
-    "question": "Which equation is used to compute the displacement thickness δ* of a laminar boundary layer?",
+    "question": "What defines instability in linear theory?",
     "options": [
-      "δ* = ∫₀^∞ (1 - u/U_∞) dy",
-      "δ* = ∫₀^∞ u/U_∞ dy",
-      "δ* = dU/dy at wall",
-      "δ* = U_∞/ν"
+      "α real and positive",
+      "Disturbance amplitude grows exponentially",
+      "Boundary layer becomes laminar",
+      "Pressure decreases"
     ],
-    "correctAnswer": "δ* = ∫₀^∞ (1 - u/U_∞) dy",
-    "explanation": "Displacement thickness measures the equivalent blockage caused by the boundary layer."
+    "correctAnswer": "Disturbance amplitude grows exponentially",
+    "explanation": "Instability corresponds to Im(ω) < 0 or growth in time. :contentReference[oaicite:17]{index=17}"
   },
   {
-    "question": "Which of these is a common experimental technique for visualising TS waves?",
+    "question": "What does Squire’s theorem state?",
     "options": [
-      "Particle Image Velocimetry (PIV)",
-      "Hot‑wire anemometry",
-      "Acoustic Doppler velocimetry",
-      "Laser-induced fluorescence"
+      "3D disturbances are always more unstable",
+      "2D disturbances are sufficient to determine first instability",
+      "Viscosity is destabilizing",
+      "Inviscid flows cannot be unstable"
     ],
-    "correctAnswer": "Particle Image Velocimetry (PIV)",
-    "explanation": "PIV provides full‑field velocity measurements that reveal the spatial structure of TS waves."
+    "correctAnswer": "2D disturbances are sufficient to determine first instability",
+    "explanation": "Squire shows 3D disturbances are not more dangerous than 2D for parallel flows. :contentReference[oaicite:18]{index=18}"
   },
   {
-    "question": "In the context of stability analysis, what does the term 'eigenvalue' refer to?",
+    "question": "What is the Orr–Sommerfeld equation used for?",
     "options": [
-      "The base flow velocity",
-      "A solution for the disturbance amplitude",
-      "The complex frequency ω obtained from the Orr–Sommerfeld problem",
-      "The Reynolds number at which instability occurs"
+      "Predicting ideal flow streamline curvature",
+      "Viscous stability analysis of parallel shear flows",
+      "Solving potential flow around airfoils",
+      "Deriving turbulence spectra"
     ],
-    "correctAnswer": "The complex frequency ω obtained from the Orr–Sommerfeld problem",
-    "explanation": "Eigenvalues are the solutions (ω) that satisfy the boundary‑value problem for given wavenumber and Re."
+    "correctAnswer": "Viscous stability analysis of parallel shear flows",
+    "explanation": "It describes evolution of velocity disturbances including viscosity effects. :contentReference[oaicite:19]{index=19}"
   },
   {
-    "question": "Which of the following best describes the role of the term d⁴ψ/dy⁴ in the Orr–Sommerfeld equation?",
+    "question": "What kind of instability appears first in a Blasius boundary layer?",
     "options": [
-      "Represents pressure forces",
-      "Accounts for viscous diffusion of vorticity",
-      "Encodes convective acceleration",
-      "Describes nonlinear interactions"
+      "Görtler vortices",
+      "Kelvin–Helmholtz waves",
+      "Tollmien–Schlichting waves",
+      "Taylor vortices"
     ],
-    "correctAnswer": "Accounts for viscous diffusion of vorticity",
-    "explanation": "The fourth derivative arises from applying the Laplacian twice to the streamfunction, capturing viscous effects."
+    "correctAnswer": "Tollmien–Schlichting waves",
+    "explanation": "TS waves arise due to viscous effects in parallel boundary-layer flow. :contentReference[oaicite:20]{index=20}"
   },
   {
-    "question": "A flow that is stable in the linear sense but becomes turbulent due to finite‑amplitude disturbances is said to exhibit:",
+    "question": "At what approximate Reynolds number (Rex) do TS waves first appear?",
     "options": [
-      "Subcritical transition",
-      "Supercritical transition",
-      "Absolute instability",
-      "Convective instability"
+      "10^3",
+      "10^4",
+      "10^5",
+      "10^7"
     ],
-    "correctAnswer": "Subcritical transition",
-    "explanation": "Subcritical flows are linearly stable but can be driven turbulent by sufficiently large perturbations."
+    "correctAnswer": "10^5",
+    "explanation": "Slides show TS waves at Rex ≈ 100k. :contentReference[oaicite:21]{index=21}"
+  },
+  {
+    "question": "What physical mechanism drives the Taylor–Couette instability?",
+    "options": [
+      "Shear at an interface",
+      "Centrifugal forces",
+      "Buoyancy forces",
+      "Capillarity"
+    ],
+    "correctAnswer": "Centrifugal forces",
+    "explanation": "Occurs when inner cylinder rotates fast enough that centrifugal effects destabilize flow. :contentReference[oaicite:22]{index=22}"
+  },
+  {
+    "question": "What is a characteristic signature of Görtler vortices?",
+    "options": [
+      "They appear in flat-plate flows",
+      "They are caused by concave wall curvature",
+      "They come from density stratification",
+      "They appear only at high Mach numbers"
+    ],
+    "correctAnswer": "They are caused by concave wall curvature",
+    "explanation": "Streamwise vortices form from centrifugal instability in concave boundaries. :contentReference[oaicite:23]{index=23}"
+  },
+  {
+    "question": "What is the typical behaviour of KH waves at an interface?",
+    "options": [
+      "Decay and disappear",
+      "Grow and roll into vortices",
+      "Remain steady",
+      "Become axisymmetric"
+    ],
+    "correctAnswer": "Grow and roll into vortices",
+    "explanation": "KH instability forms characteristic vortex roll-ups. :contentReference[oaicite:24]{index=24}"
+  },
+  {
+    "question": "Which instability is driven by a heavier fluid above a lighter fluid?",
+    "options": [
+      "Kelvin–Helmholtz",
+      "Rayleigh–Taylor",
+      "Taylor–Couette",
+      "TS waves"
+    ],
+    "correctAnswer": "Rayleigh–Taylor",
+    "explanation": "RT instability occurs under gravitationally unstable stratification. :contentReference[oaicite:25]{index=25}"
+  },
+  {
+    "question": "In a Blasius boundary layer, how does θ scale with x?",
+    "options": [
+      "θ ~ x⁰",
+      "θ ~ x¹",
+      "θ ~ x¹/²",
+      "θ ~ x²"
+    ],
+    "correctAnswer": "θ ~ x¹/²",
+    "explanation": "Similarity gives boundary-layer thickness scaling with √x. :contentReference[oaicite:26]{index=26}"
+  },
+  {
+    "question": "Why can boundary-layer equations be integrated downstream?",
+    "options": [
+      "No viscous terms",
+      "They are parabolic in x-direction",
+      "Pressure is zero",
+      "Density is variable"
+    ],
+    "correctAnswer": "They are parabolic in x-direction",
+    "explanation": "Allows marching from the leading edge. :contentReference[oaicite:27]{index=27}"
+  },
+  {
+    "question": "What is the scaling for shear layer thickness in unsteady diffusion problems?",
+    "options": [
+      "δ ∼ t",
+      "δ ∼ t²",
+      "δ ∼ √(νt)",
+      "δ ∼ 1/t"
+    ],
+    "correctAnswer": "δ ∼ √(νt)",
+    "explanation": "The diffusion process yields a √t growth. :contentReference[oaicite:28]{index=28}"
+  },
+  {
+    "question": "Which condition signals boundary-layer separation?",
+    "options": [
+      "u increases at the wall",
+      "du/dy at the wall becomes zero",
+      "Pressure gradient becomes zero",
+      "Re becomes very high"
+    ],
+    "correctAnswer": "du/dy at the wall becomes zero",
+    "explanation": "Wall shear stress τ = μ (du/dy) vanishes at separation. :contentReference[oaicite:29]{index=29}"
+  },
+  {
+    "question": "What does favourable pressure gradient do to a boundary layer?",
+    "options": [
+      "Thickens it",
+      "Causes separation",
+      "Stabilizes and thins it",
+      "Triggers KH instability"
+    ],
+    "correctAnswer": "Stabilizes and thins it",
+    "explanation": "Accelerating flow reduces boundary-layer thickness. :contentReference[oaicite:30]{index=30}"
   }
 ]
